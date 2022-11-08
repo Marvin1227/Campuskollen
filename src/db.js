@@ -397,7 +397,7 @@ export const groups = [ /*vi borde ha programnamnen på både svenska och engels
         "clothes":"/img/clothes/MTD-ov.png"
     },
     {
-        "name":"EGDB-Login",
+        "name":"EGDB-LOGIN",
         "code":"EDGB",
         "type":"Förening",
         "swe":"...",
