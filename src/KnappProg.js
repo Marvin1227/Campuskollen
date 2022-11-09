@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 function KnappProg(props) {
     
   return (
-    <Link class="removeUnderline" to={"/info/"+props.link}>
+    <Link className="removeUnderline" to={"/info/"+props.link}>
         <div className="KnappProg">
             <div style={{backgroundColor:props.color}} className="button_color"></div>
             <p>{props.titel}</p>

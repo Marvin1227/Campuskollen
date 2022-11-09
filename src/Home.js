@@ -9,8 +9,7 @@ import Flagga from './Flagga';
 
 function Home() {
 
-    const all = groups;
-    const num = Math.floor(Math.random()*41);
+    const num = Math.floor(Math.random()*groups.length);
 
     return (
         <div className="Home">

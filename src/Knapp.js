@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 function Knapp(props) {
     
   return (
-    <Link class="removeUnderline" to={"/"+props.link}>
+    <Link className="removeUnderline" to={"/"+props.link}>
         <div className="Knapp">
             <p>{props.titel}</p>
         </div>
