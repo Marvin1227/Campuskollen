@@ -3,29 +3,36 @@
   font-family: 'Courier New', Courier, monospace;
   height: 150px;
   width: 150px;
-  background-color: darkkhaki;
+  background-color: #CCC;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
   border-radius: 25px;
-  transition: background-color 1s ease-out 100ms
+  transition: background-color 0.5s ease-out 100ms
 }
 
 .Knapp:hover {
   background-color: turquoise;
 }
+.removeUnderline {
+  text-decoration: none;
+}
 
 .KnappProg {
   display: flex;
   font-family: 'Courier New', Courier, monospace;
-  height: 80px;
-  width: 500px;
-  background-color: darkkhaki;
+  height: 60px;
+  width: 400px;
+  background-color: #B9D9EB;
   align-items: left;
   justify-content: center;
   padding: 10px;
+  margin: 5px;
   border-radius: 15px;
+}
+.Flagga {
+  background-color: black;
 }
 
 .KnappWrapper1 {
@@ -39,7 +46,9 @@
 }
 
 .Home {
-
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .Wrapper{
@@ -50,4 +59,8 @@
 }
 .Searchbar{
   
+}
+.button_color{
+  width: 30px;
+  height: 50px;
 }

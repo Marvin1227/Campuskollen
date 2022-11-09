@@ -3,29 +3,30 @@ import {groups} from './db';
 import Knapp from './Knapp';
 import KnappProg from './KnappProg';
 import Searchbar from './searchbar';
+import Flagga from './Flagga';
+
+//Startsidan
 
 function Home() {
 
-    //test
-    //const mt = g
-
-    //console.log(groups[0].name);
-
     const all = groups;
-    
+    const num = Math.floor(Math.random()*41);
 
     return (
         <div className="Home">
             <Searchbar/>
             <div className="KnappWrapper1">
-                <Knapp titel="Program" link="/legionen"/>
-                <Knapp titel="Festerier" link="/legionen"/>
-                <Knapp titel="Phadderier" link="/legionen"/>
-                <Knapp titel="Föreningar" link="/legionen"/>
+                <Knapp titel="Program" link="Program"/>
+                <Knapp titel="Festerier" link="Festeri"/>
+                <Knapp titel="Phadderier" link="Phadderi"/>
+                <Knapp titel="Föreningar" link="Förening"/>
             </div>
-            <KnappProg titel="Medieteknik" link="/legionen"/>
-            <p></p>
+            <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color}/>
+            <div>
+                {/*<Flagga/>*/}
+            </div>
         </div>
+        
         
     );
   }

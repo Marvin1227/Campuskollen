@@ -6,11 +6,12 @@ import {Link} from "react-router-dom";
 function KnappProg(props) {
     
   return (
-    //<Link to={props.link}>
+    <Link class="removeUnderline" to={"/frat/"+props.link}>
         <div className="KnappProg">
+            <div style={{backgroundColor:props.color}} className="button_color"></div>
             <p>{props.titel}</p>
         </div>
-    //</Link>
+    </Link>
   );
 }
 

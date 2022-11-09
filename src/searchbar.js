@@ -1,9 +1,10 @@
 import { useState } from "react";
 import {groups} from './db';
+import {Link} from "react-router-dom";
 
 function Searchbar(props) {
     
-    const sorted_groups = groups.sort((a,b) => a.name.localeCompare(b.name));
+    const sorted_groups = groups.sort((a,b) => a.nameSW.localeCompare(b.nameSW));
     //console.log(sorted_groups);
 
     const [searchWord, setText] = useState("");
@@ -17,22 +18,19 @@ function Searchbar(props) {
     }
 
     function getName(group){
-        return group.name.toLowerCase().indexOf(searchWord.toLowerCase()) >= 0; //funktion för att filtrera på searchword
+        return group.nameSW.toLowerCase().indexOf(searchWord.toLowerCase()) >= 0; //funktion för att filtrera på searchword
     }
-    var filtered = sorted_groups.filter(getName); //filtrering
-    //if(searchWord){
-    //    filtered = sorted_groups.filter(getName); //filtrering
-    //    console.log(filtered);
-    //}
     
-
+    var filtered = sorted_groups.filter(getName); //filtrering
+    console.log(filtered);
+    
     return ( 
     <div className="Wrapper">
         <div onChange={()=> onSearch(searchWord)}>
-            <input className="Searchbar" type="text" placeholder="Sök.." onChange={setSearchString} />
+            <input className="Searchbar" type="text" placeholder="..." onChange={setSearchString} />
         </div> 
         <div className="Dropdown">
-            {filtered.map((group) => (<div className="dropdown-row"> {group.name}</div>))}
+            {filtered.map((group) => (<Link to={"/frat/"+group.code}><div className="dropdown-row" > {group.nameSW}</div></Link>))}
         </div>
     </div>
     );
