@@ -30,7 +30,7 @@ function Searchbar(props) {
             <input className="Searchbar" type="text" placeholder="..." onChange={setSearchString} />
         </div> 
         <div className="Dropdown">
-            {filtered.map((group) => (<Link to={"/frat/"+group.code}><div className="dropdown-row" > {group.nameSW}</div></Link>))}
+            {filtered.map((group) => (<Link to={"/info/"+group.code}><div className="dropdown-row" > {group.nameSW}</div></Link>))}
         </div>
     </div>
     );
