@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function Searchbar(props) {
     
-    const sorted_groups = groups.sort((a,b) => a.nameSW.localeCompare(b.nameSW));
+    const sorted_groups = groups.sort((a,b) => a.nameSW.localeCompare(b.nameSW)); //databasen sorterad alfabetiskt
     //console.log(sorted_groups);
 
     const [searchWord, setText] = useState("");
@@ -22,7 +22,7 @@ function Searchbar(props) {
     }
     
     var filtered = sorted_groups.filter(getName); //filtrering
-    console.log(filtered);
+    //console.log(filtered);
     
     return ( 
     <div className="Wrapper">

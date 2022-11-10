@@ -9,7 +9,7 @@ import Flagga from './Flagga';
 
 function Home() {
 
-    const num = Math.floor(Math.random()*groups.length);
+    const num = Math.floor(Math.random()*groups.length); //slumpad index i databasen
 
     return (
         <div className="Home">

@@ -9,23 +9,21 @@ import {Link, useParams} from "react-router-dom";
 //Program, Föreningar, Festerier, Phadderier
 function Information() {
 
-    const all = groups;
+    let {code} = useParams(); //hämtning av föreningens kod från url
 
-    let {code} = useParams();
-
-    let foundGroup = groups.find(group => group.code === code);
+    let foundGroup = groups.find(group => group.code === code); //hitta föreningen med rätt kod i databasen
 
     let connected = [];
     for(let i=0; i<foundGroup.connections.length; i++){
-        connected.push(groups.find(group => group.code === foundGroup.connections[i]));
+        connected.push(groups.find(group => group.code === foundGroup.connections[i])); //skapar array med alla kopplade föreningar
     }
     
 
     return (
         <div className="Home">
-            {foundGroup.nameSW}
-            {foundGroup.descSW}
-            Tillhör:
+            <span className="Name">{foundGroup.nameSW}</span><br/>
+            {foundGroup.descSW}<br/>
+            Tillhör:<br/>
             {connected.map((group) => (<div className="dropdown-row"> {<KnappProg titel={group.nameSW} link={group.code} color={group.color}/>}</div>))}
         </div>
         

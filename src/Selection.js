@@ -10,9 +10,7 @@ import Flagga from './Flagga';
 //Program, Föreningar, Festerier, Phadderier
 function Selection() {
 
-    const all = groups;
-
-    let {type} = useParams();
+    let {type} = useParams(); //hämtning av typ från url
 
     const L = Flagga;
     var nameLang = "nameSW";
@@ -23,12 +21,13 @@ function Selection() {
         nameLang = "nameEN";
     }
     console.log(nameLang);
-    console.log(type);
-    const sorted_groups = groups.sort((a,b) => a.nameSW.localeCompare(b.nameSW));
+    
+    //console.log(type);
+    const sorted_groups = groups.sort((a,b) => a.nameSW.localeCompare(b.nameSW)); //hela databasen sorterad alfabetiskt
 
     //console.log(group.type);
-    var filtered = sorted_groups.filter((group) => (group.type === type)); //filtrering
-    console.log(filtered);
+    var filtered = sorted_groups.filter((group) => (group.type === type)); //filtrering efter typ
+    //console.log(filtered);
     return (
         <div className="Home">
             {type}
