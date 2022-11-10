@@ -64,6 +64,11 @@
   width: 30px;
   height: 50px;
 }
+.button_color2{
+  width: 30px;
+  height: 50px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
 .Name{
   font-weight: bold;
 }

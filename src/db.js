@@ -9,6 +9,7 @@ export const groups = [
         "descEN":"MT students take standard engineering courses (mathematics, programming, physics), as well as specialized education in i.e. computer graphics, information visualization and media production. MT-students are recognized by their orange overalls with yellow and black stripes along the sides.",
         "connections":["MST","MTD","MTE","LEG","SKU","3C"],
         "color":"#ec6610",
+        "color2":"#000000",
         "logo":"/img/logos/MT-logo.png",
         "clothes":"/img/clothes/MT-ov.png"
     },
@@ -21,6 +22,7 @@ export const groups = [
         "descEN":"ED students take standard engineering courses (mathematics, programming, physics), as well as specialized education in i.e. electrical theory and electrotechnology. ED students wear khaki overalls with yellow and black stripes along the sides.",
         "connections":["EST","KRN","SKU","3C","EDGB", "LEL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/ED-logo.png",
         "clothes":"/img/clothes/ED-ov.png"
     },
@@ -33,6 +35,7 @@ export const groups = [
         "descEN":"KTS students take standard engineering courses (mathematics, programming, physics), as well as specialized education in i.e. transport flows and infrastructure. KTS students wear the blue Logistics overalls with yellow and black stripes along the sides.",
         "connections":["LST","FAM","3C","EDGB"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/KTS-logo.png",
         "clothes":"/img/clothes/KTS-ov.png"
     },
@@ -45,6 +48,7 @@ export const groups = [
         "descEN":"Graphic Design and Communication students take courses in i.e. design, marketing and branding. They wear green overalls with suspenders, with gold and black stripes along the sides.",
         "connections":["GST","GEX","LEG","SKU","TB"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/GDK-logo.png",
         "clothes":"/img/clothes/GDK-ov.png"
     },
@@ -57,6 +61,7 @@ export const groups = [
         "descEN":"Construction Engineering students are recognized by their light grey overalls with yellow stripes along the sides.",
         "connections":["BST","BAM","NOR","NPH","SKU","FN"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/BI-logo.png",
         "clothes":"/img/clothes/BI-ov.png"
     },
@@ -69,6 +74,7 @@ export const groups = [
         "descEN":"FTL students wear, just like SL students, blue logistics overalls with burgundy red stripes along the sides.",
         "connections":["LST","SL","ES","FAM","SKU","EDGB"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/FTL-logo.png",
         "clothes":"/img/clothes/SL-FTL-ov.png"
     },
@@ -81,6 +87,7 @@ export const groups = [
         "descEN":"SL students wear, just like FTL students, blue logistics overalls with burgundy red stripes along the sides.",
         "connections":["LST","FTL","ES","FAM","SKU","EDGB"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/SL-logo.png",
         "clothes":"/img/clothes/SL-FTL-ov.png"
     },
@@ -93,6 +100,7 @@ export const groups = [
         "descEN":"Escort is a festeri that belongs to the programs SL and FTL. They wear burgundy overalls with suspenders and dark blue shirts with white ropes on the shoulders. Their main events during the year are Priderallen and the Gentleman's sitting.",
         "connections":["SL","FTL","LST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/ES-logo.png",
         "clothes":"/img/clothes/ES-ov.png"
     },
@@ -105,6 +113,7 @@ export const groups = [
         "descEN":"3Cant is the festeri that belongs to the three master engineering programs in Norrköping: MT, ED and KTS. They wear black overalls with suspenders and pink shirts. Their main events of the year are Halloween and the Spring Ball.",
         "connections":["MT","KTS","ED","MST","LST","EST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/3C-logo.png",
         "clothes":"/img/clothes/3C-ov.png"
     },
@@ -117,6 +126,7 @@ export const groups = [
         "descEN":"Fest-N is the festeri that belongs to the construction engineers. They wear gray overalls with suspenders and black shirts with gold ties. Their main event during the year is the Winter Kravall and the Toga sitting, which is organized together with Tryckbar.",
         "connections":["BST","HBI"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/FN-logo.png",
         "clothes":"/img/clothes/FN-ov.png"
     },
@@ -129,6 +139,7 @@ export const groups = [
         "descEN":"Tryckbar is the ''festeri' that belongs to graphic design and communication. They wear black overalls with suspenders and green shirts with black bow ties. Their main events during the year are ''Tömningsveckan'' and the GDK sitting.",
         "connections":["GDK","GST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/TB-logo.png",
         "clothes":"/img/clothes/TB-ov.png"
     },
@@ -141,6 +152,7 @@ export const groups = [
         "descEN":"Skurkeriet is a sectionless phadderi. This means they represent all programs that go under LinTek. They are dressed in fully covering black costumes. Skurkeriet are responsible for planning the technical base year reception. During the year, Skurkeriet also arranges the ''Skurksitningen'' in collaboration with GaSSKat and Sekten.",
         "connections":["MT","GDK","ED","KTS","HBI","SL","FTL"],
         "color":"#F9EA38",
+        "color2":"#000000",
         "logo":"/img/logos/SKU-logo.png",
         "clothes":"/img/clothes/SKU-ov.png"
     },
@@ -153,6 +165,7 @@ export const groups = [
         "descEN":"Legionen is the phadderi that belongs to MT and GDK. They are dressed in big read cloaks and black sunglasses. They arrange the reception for new MT and GDK students, as well as an event during the spring called A Last Game.",
         "connections":["MT","GDK","MST","GST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/LEG-logo.png",
         "clothes":"/img/clothes/LEG-ov.png"
     },
@@ -165,6 +178,7 @@ export const groups = [
         "descEN":"Familjen is the phadderi that belongs to the logistics programs. They wear black curly wigs and dark tinted glasses. Familjen arranges the reception for new logistics students and the Mexico Sitting later in the autumn.",
         "connections":["LST","KTS","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/FAM-logo.png",
         "clothes":"/img/clothes/FAM-ov.png"
     },
@@ -177,6 +191,7 @@ export const groups = [
         "descEN":"Kretsn is the phadderi for ED students. They wear black hoods, khaki robes and flashing LED glasses. Kretsn arranges the reception for new ED students.",
         "connections":["ED","EST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/KRN-logo.png",
         "clothes":"/img/clothes/KRN-ov.png"
     },
@@ -189,6 +204,7 @@ export const groups = [
         "descEN":"N-Phadderiet is the phadderi for construction engineers in Norrköping. They wear construction helmets and dark sunglasses. N-Phadderiet arranges the reception for new construction engineering students.",
         "connections":["HBI","BST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/NFA-logo.png",
         "clothes":"/img/clothes/NFA-ov.png"
     },
@@ -201,6 +217,7 @@ export const groups = [
         "descEN":"LitheHack is a support association that focuses on helping students with coding.",
         "connections":["MT","KTS","HBI","ED"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/LTH-logo.png",
         "clothes":"/img/clothes/LTH-ov.png"
     },
@@ -213,6 +230,7 @@ export const groups = [
         "descEN":"Studentfiket is located on floor 5 in Täppan. They sell coffee, snacks and other things for low prices. Here, students can sign up to work short shifts in exchange for benefits, such as coffee cards.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/STF-logo.png",
         "clothes":"/img/clothes/STF-ov.png"
     },
@@ -225,6 +243,7 @@ export const groups = [
         "descEN":"Trappan is the faculty house for LiU-students in Norrköping where nightclubs, sittings and pubs are held every weekend.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/TRP-logo.png",
         "clothes":"/img/clothes/TRP-ov.png"
     },
@@ -237,6 +256,7 @@ export const groups = [
         "descEN":"NAFFI is a sports association that allows students to get involved in sports. They play a variety of sports, like volleyball, floorball or football, once or twice a week.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/NAF-logo.png",
         "clothes":"/img/clothes/NAF-ov.png"
     },
@@ -249,6 +269,7 @@ export const groups = [
         "descEN":"PAFF, or the Peking Academic Outdoor Association, is an association that focuses on outdoor life. They organize, for example, hikes.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/PAF-logo.png",
         "clothes":"/img/clothes/PAF-ov.png"
     },
@@ -261,6 +282,7 @@ export const groups = [
         "descEN":"SKÖN is an association for students who want to get involved in music and sing in a choir.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/SKN-logo.png",
         "clothes":"/img/clothes/SKN-ov.png"
     },
@@ -273,6 +295,7 @@ export const groups = [
         "descEN":"LiuNardo is Campus Norrköping's art association. Every other week they get together to draw and paint.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/LIN-logo.png",
         "clothes":"/img/clothes/LIN-ov.png"
     },
@@ -285,6 +308,7 @@ export const groups = [
         "descEN":"Candela is an association that arranges light and sound fixtures at events and parties for students in Norrköping.",
         "connections":["MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/CAN-logo.png",
         "clothes":"/img/clothes/CAN-ov.png"
     },
@@ -297,6 +321,7 @@ export const groups = [
         "descEN":"Student's film association in Norrköping. At Cnema, close to campus, Stubinen shows movies for students to come view.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/STU-logo.png",
         "clothes":"/img/clothes/STU-ov.png"
     },
@@ -309,6 +334,7 @@ export const groups = [
         "descEN":"Pub Vattentornet ('The Watertower') is Norrköping's eldest student pub. They serve a variety of rare beers fit for student's prices",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/TRN-logo.png",
         "clothes":"/img/clothes/TRN-ov.png"
     },
@@ -321,6 +347,7 @@ export const groups = [
         "descEN":"FF ('United Festeries') consists of previous Festerists, acting as a communicating middle man between Festeries and Trappan.",
         "connections":["3C","ES","TB","FN"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/FF-logo.png",
         "clothes":"/img/clothes/FF-ov.png"
     },
@@ -333,6 +360,7 @@ export const groups = [
         "descEN":"Vargtass, Norrland's Nation, is a student's association that organizes the annual ski trip to Åre, along with the pub during which the tickets are sold",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/VTS-logo.png",
         "clothes":"/img/clothes/VTS-ov.png"
     },
@@ -345,6 +373,7 @@ export const groups = [
         "descEN":"Student's association that annually collects money for Musikhjälpen",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/CSR-logo.png",
         "clothes":"/img/clothes/CSR-ov.png"
     },
@@ -357,6 +386,7 @@ export const groups = [
         "descEN":"LitheEl is an association primarily aimed at ED students. They have access to special premises with advanced and specialized equipment.",
         "connections":["ED","KRN"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/LEL-logo.png",
         "clothes":"/img/clothes/LEL-ov.png"
     },
@@ -368,7 +398,8 @@ export const groups = [
         "descSW":"En grupp Medieteknikstudenter som representerar programmet, samt hanterar frågor mellan universitetet och MT-studenterna. De anordnar också evenemang för främst MT-studenter, som Kräftskivan och Midsommarfesten. Sektionen har även flera utskott som arbetar med mer specifika områden och evenemang.",
         "descEN":"Students representing the Media Technology program, acting as a connection between the university and MT-students. They also organize events for mainly MT students, such as Kräftskivan and Midsommarfesten. The board also has committees, that handle more specific fields and certain events.",
         "connections":["MT","MTE","MTD","3C","LEG"],
-        "color":"#000000",
+        "color":"#ec6610",
+        "color2":"#000000",
         "logo":"/img/logos/MST-logo.png",
         "clothes":"/img/clothes/MST-ov.png"
     },
@@ -381,6 +412,7 @@ export const groups = [
         "descEN":"Students representing the Logistics programs KTS, SL and FTL, acting as a connection between the university and the Logistics students. They also organize events for mainly Logistics students, such as LOGdansen. The board also has committees, that handle more specific fields and certain events.",
         "connections":["KTS","SL","FTL", "ES", "3C","FAM","EDGB"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/LST-logo.png",
         "clothes":"/img/clothes/LST-ov.png"
     },
@@ -393,6 +425,7 @@ export const groups = [
         "descEN":"Students representing the Logistics programs KTS, SL and FTL, acting as a connection between the university and the Logistics students. They also organize events for mainly construction engineering students. The board also has committees, that handle more specific fields and certain events.",
         "connections":["HBI","BAM","NOR", "FN", "NPH"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/BST-logo.png",
         "clothes":"/img/clothes/BST-ov.png"
     },
@@ -405,6 +438,7 @@ export const groups = [
         "descEN":"Students representing the Electronics Design program, acting as a connection between the university and ED-students. They also organize events for mainly ED students, such as Springbreak. The board also has committees, that handle more specific fields and certain events.",
         "connections":["ED","3C","KRN","EDGB"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/EST-logo.png",
         "clothes":"/img/clothes/EST-ov.png"
     },
@@ -417,6 +451,7 @@ export const groups = [
         "descEN":"Students representing the Graphic Design and Communications program, acting as a connection between the university and GDK-students. They also organize events for mainly GDK students, such as ''MT <3 GDK''. The board also has committees, that handle more specific fields and certain events.",
         "connections":["GDK","GEX","LEG","TB"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/GST-logo.png",
         "clothes":"/img/clothes/GST-ov.png"
     },
@@ -428,7 +463,8 @@ export const groups = [
         "descSW":"Mette är tjejföreningen för MT-studenter. De anordnar bland annat Damsittningen tillsammans med Nora, samt ovve-invigningen för MT-studenter.",
         "descEN":"Mette is the girls' association for MT-students. They organize, among other things, the Ladies' Sitting and the ovve inauguration for MT students.",
         "connections":["MT","MST","NOR"],
-        "color":"#000000",
+        "color":"#ec6610",
+        "color2":"#000000",
         "logo":"/img/logos/MTE-logo.png",
         "clothes":"/img/clothes/MTE-ov.png"
     },
@@ -440,7 +476,8 @@ export const groups = [
         "descSW":"MTD är en förening som arrangerar mässan Medieteknikdagen. Det är en mässa där företag och MT-studenter får chansen att träffas, visa upp sig och knyta kontakter med varandra.",
         "descEN":"MTD is an association that organizes the Media Technology Day fair. It is a fair where companies and MT students get the chance to meet and network.",
         "connections":["MT","MST"],
-        "color":"#000000",
+        "color":"#ec6610",
+        "color2":"#000000",
         "logo":"/img/logos/MTD-logo.png",
         "clothes":"/img/clothes/MTD-ov.png"
     },
@@ -453,6 +490,7 @@ export const groups = [
         "descEN":"Industry fair arranged by the ED and Logistics sections. It is a fair where companies and students get the chance to meet and network.",
         "connections":["KTS","ED","SL","FTL","EST","LST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/EDGB-logo.png",
         "clothes":"/img/clothes/EDGB-ov.png"
     },
@@ -465,6 +503,7 @@ export const groups = [
         "descEN":"Nora is the girls' association for construction engineering students in Norrköping. They organize for example the Ladies' Sitting, together with Mette.",
         "connections":["HBI","BST","MTE"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/NOR-logo.png",
         "clothes":"/img/clothes/NOR-ov.png"
     },
@@ -477,6 +516,7 @@ export const groups = [
         "descEN":"The construction engineers' industry fair. It is a fair where companies and construction engineering students get the chance to meet and network.",
         "connections":["HBI","BST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/BAM-logo.png",
         "clothes":"/img/clothes/BAM-ov.png"
     },
@@ -489,6 +529,7 @@ export const groups = [
         "descEN":"Event where third-year GDK-students get the opportunity to present their projects and creations from their studies in front of fellow students, teachers, family, companies and potential employers.",
         "connections":["GDK","GST"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/GEX-logo.png",
         "clothes":"/img/clothes/GEX-ov.png"
     },
@@ -501,6 +542,7 @@ export const groups = [
         "descEN":"LinTek's faculty magazine, created by students. All LinTek members regularly receive the latest issue of LiTHanian in their mailbox.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#000000",
+        "color2":"#000000",
         "logo":"/img/logos/LAN-logo.png",
         "clothes":"/img/clothes/LAN-ov.png"
     }

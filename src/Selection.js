@@ -31,7 +31,7 @@ function Selection() {
     return (
         <div className="Home">
             {type}
-            {filtered.map((group) => (<div className="dropdown-row"> {<KnappProg titel={group.nameSW} link={group.code} color={group.color}/>}</div>))}
+            {filtered.map((group) => (<div className="dropdown-row"> {<KnappProg titel={group.nameSW} link={group.code} color={group.color} color2={group.color2}/>}</div>))}
         </div>
         
     );

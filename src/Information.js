@@ -24,7 +24,7 @@ function Information() {
             <span className="Name">{foundGroup.nameSW}</span><br/>
             {foundGroup.descSW}<br/>
             Tillhör:<br/>
-            {connected.map((group) => (<div className="dropdown-row"> {<KnappProg titel={group.nameSW} link={group.code} color={group.color}/>}</div>))}
+            {connected.map((group) => (<div className="dropdown-row"> {<KnappProg titel={group.nameSW} link={group.code} color={group.color} color2={group.color2}/>}</div>))}
         </div>
         
     );

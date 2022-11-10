@@ -20,7 +20,7 @@ function Home() {
                 <Knapp titel="Phadderier" link="Phadderi"/>
                 <Knapp titel="Föreningar" link="Förening"/>
             </div>
-            <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color}/>
+            <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
             <div>
                 {/*<Flagga/>*/}
             </div>
