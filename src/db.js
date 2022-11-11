@@ -151,8 +151,8 @@ export const groups = [
         "descSW":"Skurkeriet är ett sektionslöst phadderi, vilket innebär att de representerar alla program under LinTek. De går under nolle-p klädda i heltäckande svarta dräkter, och är även ansvariga för att planera tekniska basårets mottagning. Under året arrangerar Skurkeriet även Skurksittningen i samarbete med GaSSKat och Sekten.",
         "descEN":"Skurkeriet is a sectionless phadderi. This means they represent all programs that go under LinTek. They are dressed in fully covering black costumes. Skurkeriet are responsible for planning the technical base year reception. During the year, Skurkeriet also arranges the ''Skurksitningen'' in collaboration with GaSSKat and Sekten.",
         "connections":["MT","GDK","ED","KTS","HBI","SL","FTL"],
-        "color":"#F9EA38",
-        "color2":"#000000",
+        "color":"#000000",
+        "color2":"#F9EA38",
         "logo":"/img/logos/SKU-logo.png",
         "clothes":"/img/clothes/SKU-ov.png"
     },
@@ -165,7 +165,7 @@ export const groups = [
         "descEN":"Legionen is the phadderi that belongs to MT and GDK. They are dressed in big read cloaks and black sunglasses. They arrange the reception for new MT and GDK students, as well as an event during the spring called A Last Game.",
         "connections":["MT","GDK","MST","GST"],
         "color":"#802629",
-        "color2":"#802629",
+        "color2":"#454545",
         "logo":"/img/logos/LEG-logo.png",
         "clothes":"/img/clothes/LEG-ov.png"
     },
@@ -190,7 +190,7 @@ export const groups = [
         "descSW":"Kretsn är phadderiet för ED-studenter. De har svarta huvor, khakifärgade kappor och blinkande LED-glasögon. Kretsn arrangerar mottagningen under nolle-p för nya ED-studenter.",
         "descEN":"Kretsn is the phadderi for ED students. They wear black hoods, khaki robes and flashing LED glasses. Kretsn arranges the reception for new ED students.",
         "connections":["ED","EST"],
-        "color":"#E31A28",
+        "color":"#000000",
         "color2":"#573125",
         "logo":"/img/logos/KRN-logo.png",
         "clothes":"/img/clothes/KRN-ov.png"
@@ -204,7 +204,7 @@ export const groups = [
         "descEN":"N-Phadderiet is the phadderi for construction engineers in Norrköping. They wear construction helmets and dark sunglasses. N-Phadderiet arranges the reception for new construction engineering students.",
         "connections":["HBI","BST"],
         "color":"#FCF101",
-        "color2":"#FB0103",
+        "color2":"#5e5e5e",
         "logo":"/img/logos/NFA-logo.png",
         "clothes":"/img/clothes/NFA-ov.png"
     },
@@ -216,8 +216,8 @@ export const groups = [
         "descSW":"LitheHack är en stödförening som inriktar sig på att hjälpa studenter med programmering.",
         "descEN":"LitheHack is a support association that focuses on helping students with coding.",
         "connections":["MT","KTS","HBI","ED"],
-        "color":"#FFFFFF",
-        "color2":"#441E2A",
+        "color":"#81A49E",
+        "color2":"#643173",
         "logo":"/img/logos/LTH-logo.png",
         "clothes":"/img/clothes/LTH-ov.png"
     },
