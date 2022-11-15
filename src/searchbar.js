@@ -24,7 +24,7 @@ function Searchbar(props) {
         if(!isEmpty()){
         return group.nameSW.toLowerCase().indexOf(searchWord.toLowerCase()) >= 0; //returnera på sökord
         }
-        else return group.nameSW.toLowerCase().indexOf(searchWord.toLowerCase()) >= 1; //returnera inget?
+        else return false; //returnera inget
     }
     
     
