@@ -4,6 +4,8 @@ import Knapp from './Knapp';
 import KnappProg from './KnappProg';
 import Searchbar from './searchbar';
 import Flagga from './Flagga';
+import TillbakaKnapp from './TillbakaKnapp';
+import {Link} from "react-router-dom";
 
 //Startsidan
 
@@ -13,6 +15,13 @@ function Home() {
 
     return (
         <div className="Home">
+            <div className="container">
+                <h1>
+                    <TillbakaKnapp className="backArrow"/> 
+                   <span className ="armab"> <Link className="homeButton" to={"/"}> Campuskollen</Link> </span>
+                </h1>
+             </div>
+            
             <Searchbar/>
             <div className="KnappWrapper1">
                 <Knapp titel="Program" link="Program"/>
@@ -20,7 +29,7 @@ function Home() {
                 <Knapp titel="Phadderier" link="Phadderi"/>
                 <Knapp titel="Föreningar" link="Förening"/>
             </div>
-            <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
+                <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
             <div>
                 {/*<Flagga/>*/}
             </div>

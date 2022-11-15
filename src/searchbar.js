@@ -9,24 +9,31 @@ function Searchbar(props) {
 
     const [searchWord, setText] = useState("");
 
-    const onSearch = (searchTerm)=>{
-        console.log('search',searchTerm);
-    }
-
     function setSearchString(event) {
         setText(event.target.value); //uppdatera searchword
     }
 
-    function getName(group){
-        return group.nameSW.toLowerCase().indexOf(searchWord.toLowerCase()) >= 0; //funktion för att filtrera på searchword
+    function isEmpty(){
+        if(searchWord.length === 0){
+            return true;
+        }else
+        return false;
     }
+
+    function getName(group){
+        if(!isEmpty()){
+        return group.nameSW.toLowerCase().indexOf(searchWord.toLowerCase()) >= 0; //returnera på sökord
+        }
+        else return group.nameSW.toLowerCase().indexOf(searchWord.toLowerCase()) >= 1; //returnera inget?
+    }
+    
     
     var filtered = sorted_groups.filter(getName); //filtrering
     //console.log(filtered);
     
     return ( 
     <div className="Wrapper">
-        <div onChange={()=> onSearch(searchWord)}>
+        <div>
             <input className="Searchbar" type="text" placeholder="..." onChange={setSearchString} />
         </div> 
         <div className="Dropdown">

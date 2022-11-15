@@ -3,6 +3,7 @@ import {groups} from './db';
 import Knapp from './Knapp';
 import KnappProg from './KnappProg';
 import Searchbar from './searchbar';
+import TillbakaKnapp from './TillbakaKnapp';
 import {Link, useParams} from "react-router-dom";
 import Flagga from './Flagga';
 
@@ -30,6 +31,9 @@ function Selection() {
     //console.log(filtered);
     return (
         <div className="Home">
+            <div className ="header">
+                <h1><TillbakaKnapp/> <Link to={"/"}> Campuskollen</Link></h1>
+            </div>
             {type}
             {filtered.map((group) => (<div className="dropdown-row"> {<KnappProg titel={group.nameSW} link={group.code} color={group.color} color2={group.color2}/>}</div>))}
         </div>

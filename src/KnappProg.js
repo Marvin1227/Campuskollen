@@ -8,7 +8,7 @@ function KnappProg(props) {
   return (
     <Link className="removeUnderline" to={"/info/"+props.link}>
         <div className="KnappProg">
-            <div style={{backgroundColor:props.color}} className="button_color"><div style={{backgroundColor:props.color2}} className="button_color2"></div></div>
+            <div style={{backgroundColor:props.color}} className="button_color"><div style={{backgroundColor:props.color2}} className="button_color2"/></div>
             <p>{props.titel}</p>
         </div>
     </Link>

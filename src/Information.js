@@ -3,6 +3,7 @@ import {groups} from './db';
 import Knapp from './Knapp';
 import KnappProg from './KnappProg';
 import Searchbar from './searchbar';
+import TillbakaKnapp from './TillbakaKnapp';
 import {Link, useParams} from "react-router-dom";
 
 //Sidan med alla föreningar av en typ, landar här från de fyra stora knapparna på startsidan
@@ -21,6 +22,9 @@ function Information() {
 
     return (
         <div className="Home">
+            <div className ="header">
+                <h1><TillbakaKnapp/> <Link to={"/"}> Campuskollen</Link></h1>
+            </div>
             <span className="Name">{foundGroup.nameSW}</span><br/>
             {foundGroup.descSW}<br/>
             Tillhör:<br/>
