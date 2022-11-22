@@ -30,8 +30,8 @@ function Home() {
                 <Knapp titel="Föreningar" link="Förening"/>
             </div>
                 <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
-            <div>
-                {/*<Flagga/>*/}
+            <div className="change_lang">
+                {<Flagga/>}
             </div>
         </div>
         

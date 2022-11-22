@@ -12,16 +12,6 @@ import Flagga from './Flagga';
 function Selection() {
 
     let {type} = useParams(); //hämtning av typ från url
-
-    const L = Flagga;
-    var nameLang = "nameSW";
-    
-    if(Flagga.lang === true){
-        nameLang = "nameSW";
-    } else {
-        nameLang = "nameEN";
-    }
-    console.log(nameLang);
     
     //console.log(type);
     const sorted_groups = groups.sort((a,b) => a.nameSW.localeCompare(b.nameSW)); //hela databasen sorterad alfabetiskt

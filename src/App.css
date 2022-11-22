@@ -1,6 +1,10 @@
+
 .Knapp {
   display: flex;
-  font-family: 'Muli',sans-serif;
+  font-family: auto-pro-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
   height: 150px;
   width: 150px;
   background-color: #CCC;
@@ -22,7 +26,10 @@
 
 .KnappProg {
   display: flex;
-  font-family: 'Muli',sans-serif;
+  font-family: auto-pro-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
   height: 60px;
   width: 350px;
   background-color: #B9D9EB;
@@ -33,7 +40,7 @@
   border-radius: 15px;
 }
 .Flagga {
-  background-color: black;
+  height: 40px;
 }
 
 .KnappWrapper1 {
@@ -50,7 +57,6 @@
   text-decoration: none;
   flex-direction: row;
 }
-
 
 .container{
   display: flex;
@@ -83,7 +89,8 @@
 
 }
 .Dropdown{
-
+  max-height: 150px;
+  overflow-y: scroll;
 }
 .Searchbar{
   
@@ -100,4 +107,7 @@
 }
 .Name{
   font-weight: bold;
+}
+
+.change_lang{
 }
