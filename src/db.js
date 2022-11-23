@@ -482,7 +482,7 @@ export const groups = [
         "clothes":"/img/clothes/MTD-ov.png"
     },
     {
-        "nameSW":"EGDB-LOGIN",
+        "nameSW":"EDGB-LOGIN",
         "nameEN":"EDGB-LOGIN",
         "code":"EDGB",
         "type":"Förening",

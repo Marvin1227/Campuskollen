@@ -1,10 +1,12 @@
 import { useState } from "react";
 import {groups} from './db';
 import {Link} from "react-router-dom";
+import {lang} from './Flagga';
+import {matchSorter} from 'match-sorter';
 
 function Searchbar(props) {
     
-    const sorted_groups = groups.sort((a,b) => a.nameSW.localeCompare(b.nameSW)); //databasen sorterad alfabetiskt
+    const sorted_groups = groups.sort((a,b) => eval("a.name"+lang).localeCompare(eval("b.name"+lang))); //databasen sorterad alfabetiskt
     //console.log(sorted_groups);
 
     const [searchWord, setText] = useState("");
@@ -22,22 +24,34 @@ function Searchbar(props) {
 
     function getName(group){
         if(!isEmpty()){
-        return group.nameSW.toLowerCase().indexOf(searchWord.toLowerCase()) >= 0; //returnera på sökord
+        return eval("group.name"+lang+".toLowerCase().indexOf(searchWord.toLowerCase())") >= 0 || group.code.indexOf(searchWord.toUpperCase()) >= 0; //returnera på sökord
         }
         else return false; //returnera inget
     }
     
     
     var filtered = sorted_groups.filter(getName); //filtrering
-    //console.log(filtered);
+
+    //sortering efter searchword med hjälp av https://github.com/kentcdodds/match-sorter
+    var sortw = matchSorter(filtered, searchWord, {keys: [item => eval("item.name"+lang)]}); 
     
+    var barText = "Sök här...";
+
+    if(lang == "SW"){
+        barText = "Sök här...";
+
+    }else if (lang == "EN") {
+        barText = "Search here...";
+
+    }
+
     return ( 
     <div className="Wrapper">
         <div>
-            <input className="Searchbar" type="text" placeholder="..." onChange={setSearchString} />
+            <input className="Searchbar" type="text" placeholder={barText} onChange={setSearchString} />
         </div> 
         <div className="Dropdown">
-            {filtered.map((group) => (<Link to={"/info/"+group.code}><div className="dropdown-row" > {group.nameSW}</div></Link>))}
+            {sortw.map((group) => (<Link to={"/info/"+group.code}><div className="dropdown-row" > {eval("group.name"+lang)}</div></Link>))}
         </div>
     </div>
     );

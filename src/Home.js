@@ -6,37 +6,82 @@ import Searchbar from './searchbar';
 import Flagga from './Flagga';
 import TillbakaKnapp from './TillbakaKnapp';
 import {Link} from "react-router-dom";
+import {lang} from './Flagga';
+import{useContext} from "react";
+import {LangContext} from "./App"
 
 //Startsidan
 
-function Home() {
+function Home({onLang}) {
 
+    const lang = useContext(LangContext); 
+        console.log(lang);
     const num = Math.floor(Math.random()*groups.length); //slumpad index i databasen
 
-    return (
-        <div className="Home">
-            <div className="container">
-                <h1>
-                    <TillbakaKnapp className="backArrow"/> 
-                   <span className ="armab"> <Link className="homeButton" to={"/"}> Campuskollen</Link> </span>
-                </h1>
-             </div>
+    var forening = "Föreningar";
+
+    if(lang == "SW"){
+        forening = "Föreningar";
+    }else if (lang == "EN") {
+        forening = "Associations";
+    }
+    
+    var random = "groups[num].nameSW";
+    if(lang == "SW"){
+        return (
+            <div className="Home">
+                <div className="container">
+                    <h1>
+                        <TillbakaKnapp className="backArrow"/> 
+                        <Link className="homeButton" to={"/"}> Campuskollen</Link>
+                    </h1>
+                </div>
+                
+                    <Searchbar/>
+                    <div className="homeBody">
+                        <div className="KnappWrapper1">
+                            <Knapp titel="Program" link="Program"/>
+                            <Knapp titel="Festerier" link="Festeri"/>
+                            <Knapp titel="Phadderier" link="Phadderi"/>
+                            <Knapp titel={forening} link="Förening"/>
+                        </div>
+                        <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
+                    </div>
+                    <div className="change_lang"> {<Flagga onLang={onLang}/>} 
+                </div>
+            </div>
             
-            <Searchbar/>
-            <div className="KnappWrapper1">
-                <Knapp titel="Program" link="Program"/>
-                <Knapp titel="Festerier" link="Festeri"/>
-                <Knapp titel="Phadderier" link="Phadderi"/>
-                <Knapp titel="Föreningar" link="Förening"/>
+            
+        );
+
+    }else if (lang == "EN") {
+        return (
+            <div className="Home">
+                <div className="container">
+                    <h1>
+                        <TillbakaKnapp className="backArrow"/> 
+                        <Link className="homeButton" to={"/"}> Campuskollen</Link>
+                    </h1>
+                </div>
+                
+                    <Searchbar/>
+                    <div className="homeBody">
+                        <div className="KnappWrapper1">
+                            <Knapp titel="Program" link="Program"/>
+                            <Knapp titel="Festerier" link="Festeri"/>
+                            <Knapp titel="Phadderier" link="Phadderi"/>
+                            <Knapp titel={forening} link="Förening"/>
+                        </div>
+                        <KnappProg titel={groups[num].nameEN} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
+                    </div>
+                    <div className="change_lang"> {<Flagga onLang={onLang}/>} 
+                </div>
             </div>
-                <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
-            <div className="change_lang">
-                {<Flagga/>}
-            </div>
-        </div>
-        
-        
-    );
+            
+            
+        );
+
+    } 
   }
 
   export default Home;

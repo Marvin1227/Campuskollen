@@ -1,22 +1,38 @@
 import './App.css';
+import React from 'react';
+import { useState } from 'react';
 
+var lang = "SW";
 //Språkknapp som ändrar språk
-function Flagga() {
-    var lang = "SW";
+function Flagga({ onLang }) {
+  var buttonText = "To English";
 
-    function changeLanguage() {
-      console.log("click");
-      if(lang === "SW"){
-        lang = "EN";
-        console.log("if");
-        }
-      else{
-        lang="SW";
-        console.log("else");
-        }
+  if (lang == "SW") {
+    buttonText = "To English";
+
+  } else if (lang == "EN") {
+    buttonText = "To Swedish";
+
+  }
+  function changeLanguage() {
+    console.log("click");
+    if (lang === "SW") {
+      lang = "EN";
+      console.log("if" + lang);
     }
-  return ( 
-      <button className="Flagga" onClick={changeLanguage()}>byt språk {lang}</button>
+    else {
+      lang = "SW";
+      console.log("else" + lang);
+    }
+    onLang(lang);
+  }
+
+
+  return (
+    <button className="Flagga" onClick={changeLanguage}>{buttonText}</button>
   );
 }
 export default Flagga;
+
+
+export var lang;

@@ -4,24 +4,28 @@ import Home from './Home';
 import Selection from './Selection'
 import Information from './Information'
 import { Helmet } from "react-helmet";
+import{createContext, useState} from "react"
 
-
+export const LangContext = createContext("SW");
 function App() {
-  let lang = "SW";
+  const [lang, setLang] = useState("SW")
+  //let lang = "SW";
   return (
-    <div>
-      <Helmet>
-      <link rel="stylesheet" href="https://use.typekit.net/tjg5yvi.css"/>
-      </Helmet>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/:type" element={<Selection/>}/>
-          <Route path="/info/:code" element={<Information/>}/>
-        </Routes>
-      </BrowserRouter>
+    <LangContext.Provider value={lang}>
+     <div>
+       <Helmet>
+        <link rel="stylesheet" href="https://use.typekit.net/tjg5yvi.css"/>
+        </Helmet>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home onLang={setLang}/>} />
+            <Route path="/:type" element={<Selection onLang={setLang}/>}/>
+            <Route path="/info/:code" element={<Information onLang={setLang}/>}/>
+          </Routes>
+        </BrowserRouter>
       
-    </div>
+      </div>
+    </LangContext.Provider>
   );
 }
 //const root = ReactDOM.createRoot(document.getElementById("root"));
