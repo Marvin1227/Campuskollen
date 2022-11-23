@@ -46,12 +46,10 @@ function Searchbar(props) {
     }
 
     return ( 
-    <div className="Wrapper">
-        <div>
-            <input className="Searchbar" type="text" placeholder={barText} onChange={setSearchString} />
-        </div> 
-        <div className="Dropdown">
-            {sortw.map((group) => (<Link to={"/info/"+group.code}><div className="dropdown-row" > {eval("group.name"+lang)}</div></Link>))}
+    <div className="search">
+        <input className="Searchbar" type="text" placeholder={barText} onChange={setSearchString} />
+        <div className="dropdown">
+            {sortw.map((group) => (<Link to={"/info/"+group.code}><div className="dropdown-row"><h3>{eval("group.name"+lang)}</h3></div></Link>))}
         </div>
     </div>
     );

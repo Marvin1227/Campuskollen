@@ -7,13 +7,13 @@ import {lang} from './Flagga';
 //tillbakaknapp
 function TillbakaKnapp(props) {
         
-    var buttonText = "Tillbaka";
+    var buttonText = "< Tillbaka";
 
     if(lang == "SW"){
-        buttonText = "Tillbaka";
+        buttonText = "< Tillbaka";
 
     }else if (lang == "EN") {
-        buttonText = "Back";
+        buttonText = "< Back";
 
     }
 

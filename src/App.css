@@ -2,87 +2,138 @@
   --blu: #190064;
   --liublu: #00b3e0;
 }
-
+html {
+  width: 100%;
+  height: 100%;
+  font-family: kulturista-web, serif;
+}
+body {
+  background-color: #FFF;
+  margin: 0;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 p {
   font-family: kulturista-web, serif;
   color: var(--blu);
   font-weight: 400;
   font-style: normal;
 }
-
-.Knapp {
-  display: flex;
+h1 {
+  color: #FFF;
   font-family: auto-pro-new, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.5rem;
+}
+h2 {
   color: var(--blu);
-  height: 150px;
-  width: 150px;
-  background-color: #CCC;
+  font-family: auto-pro-new, sans-serif;
+  font-size: 1.5rem;
+}
+h3 {
+  color: var(--blu);
+  font-family: kulturista-web, serif;
+  font-size: 1rem;
+  margin: 0;
+}
+button {
+  background-color: inherit;
+  font-family: kulturista-web, serif;
+  font-weight: 400;
+  color: white;
+  border: none;
+}
+input {
+  width: 80%;
+  height: 2rem;
+  margin: 1rem 1rem 0 1rem;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: var(--blu);
+}
+.search {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dropdown{
+  max-height: 7rem;
+  overflow-y: scroll;
+  width: 80%;
+  position: absolute;
+  margin-top: 3.5rem;
+}
+.dropdown-row {
+  padding: .2rem 0;
+}
+.selections {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+.knapp {
+  display: flex;
+  color: var(--blu);
+  height: 7rem;
+  width: 7rem;
+  background-color: #EEE;
+  box-shadow: var(--blu) .3rem .3rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5px;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 25px;
-  transition: background-color 0.5s ease-out 100ms
+  transition: background-color 0.5s ease-out 100ms;
 }
-
-.Knapp:hover {
+.knapp:hover {
   background-color: var(--liublu);
 }
-.removeUnderline {
-  text-decoration: none;
+.random {
+  width: 80%;
 }
-
 .KnappProg {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: auto-pro-new, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
-  height: 60px;
-  width: 350px;
-  background-color: #B9D9EB;
-
-  justify-content: center;
-  padding: 10px;
-  margin: 5px;
+  height: 7rem;
+  background-color: #EEE;
+  box-shadow: var(--blu) .3rem .3rem;
   border-radius: 15px;
+  padding: 0 1rem;
 }
 .Flagga {
   height: 40px;
 }
 
-.KnappWrapper1 {
-  width: 50%;
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  row-gap: 20px;
-}
-
-.homeButton {
-  text-decoration: none;
-  flex-direction: row;
-}
-
-.container{
-  display: flex;
-}
-
 .backArrow{
   flex-direction: row;
 }
-.header {
-  width: 100%;
-  height: 100px;
-  display: block;
-}
-
 .innerHeader {
   width: 500px;
   height: 100%;
@@ -92,21 +143,6 @@ p {
  
 }
 
-.homeBody {
-  display: flex;
-  justify-content: center;
-}
-
-.Wrapper{
-
-}
-.Dropdown{
-  max-height: 150px;
-  overflow-y: scroll;
-}
-.Searchbar{
-  
-}
 .button_color{
   width: 30px;
   height: 50px;
@@ -119,7 +155,4 @@ p {
 }
 .Name{
   font-weight: bold;
-}
-
-.change_lang{
 }

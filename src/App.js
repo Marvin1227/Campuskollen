@@ -15,6 +15,7 @@ function App() {
      <div>
        <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/tjg5yvi.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Helmet>
         <BrowserRouter>
           <Routes>

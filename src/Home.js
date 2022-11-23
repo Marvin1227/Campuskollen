@@ -29,23 +29,26 @@ function Home({onLang}) {
     var random = "groups[num].nameSW";
     if(lang == "SW"){
         return (
-            <div className="Home">
-                <div className="container">
+            <div className="home">
+                <div className="header">
+                    
+                <TillbakaKnapp className="backArrow"/> 
                     <h1>
-                        <TillbakaKnapp className="backArrow"/> 
-                        <Link className="homeButton" to={"/"}> Campuskollen</Link>
+                        <Link to={"/"}> Campuskollen</Link>
                     </h1>
                 </div>
                 
                     <Searchbar/>
-                    <div className="homeBody">
-                        <div className="KnappWrapper1">
+                    <div className="btn-container">
+                        <div className="selections">
                             <Knapp titel="Program" link="Program"/>
                             <Knapp titel="Festerier" link="Festeri"/>
                             <Knapp titel="Phadderier" link="Phadderi"/>
                             <Knapp titel={forening} link="Förening"/>
                         </div>
+                        <div className="random">
                         <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
+                        </div>
                     </div>
                     <div className="change_lang"> {<Flagga onLang={onLang}/>} 
                 </div>
@@ -56,23 +59,26 @@ function Home({onLang}) {
 
     }else if (lang == "EN") {
         return (
-            <div className="Home">
-                <div className="container">
+            <div className="home">
+                <div className="header">
+                    
+                <TillbakaKnapp className="backArrow"/> 
                     <h1>
-                        <TillbakaKnapp className="backArrow"/> 
                         <Link className="homeButton" to={"/"}> Campuskollen</Link>
                     </h1>
                 </div>
                 
                     <Searchbar/>
-                    <div className="homeBody">
-                        <div className="KnappWrapper1">
+                    <div className="btn-container">
+                        <div className="selections">
                             <Knapp titel="Program" link="Program"/>
                             <Knapp titel="Festerier" link="Festeri"/>
                             <Knapp titel="Phadderier" link="Phadderi"/>
                             <Knapp titel={forening} link="Förening"/>
                         </div>
+                        <div className="random">
                         <KnappProg titel={groups[num].nameEN} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
+                        </div>
                     </div>
                     <div className="change_lang"> {<Flagga onLang={onLang}/>} 
                 </div>
