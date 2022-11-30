@@ -20,7 +20,7 @@ function TillbakaKnapp(props) {
     let Navigate = useNavigate();
     return (
         
-            <button onClick={() => Navigate(-1)}>{buttonText}</button>
+            <button onClick={() => Navigate(-1)}><img className="backarrow" src="/img/backarrow.png"/></button>
         
     );
 }

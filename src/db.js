@@ -20,7 +20,7 @@ export const groups = [
         "type":"Program",
         "descSW":"ED-studenter läser grundläggande civilingenjörskurser (matematik, programmering, fysik) såväl som specialiserade kurser inom bland annat elteori och elektroteknik. De bär khaki overaller med de gulsvarta civilingenjörsrevärerna på.",
         "descEN":"ED students take standard engineering courses (mathematics, programming, physics), as well as specialized education in i.e. electrical theory and electrotechnology. ED students wear khaki overalls with yellow and black stripes along the sides.",
-        "connections":["EST","KRN","SKU","3C","EDGB", "LEL"],
+        "connections":["EST","KRN","SKU","3C","EDGB","LEL"],
         "color":"#159A07",
         "color2":"#000000",
         "logo":"/img/logos/ED-logo.png",
@@ -62,7 +62,7 @@ export const groups = [
         "connections":["BST","BAM","NOR","NPH","SKU","FN"],
         "color":"#FFFC2C",
         "color2":"#000000",
-        "logo":"/img/logos/BI-logo.png",
+        "logo":"/img/logos/BST-logo.png",
         "clothes":"/img/clothes/BI-ov.svg"
     },
     {
@@ -205,8 +205,8 @@ export const groups = [
         "connections":["HBI","BST"],
         "color":"#FCF101",
         "color2":"#5e5e5e",
-        "logo":"/img/logos/NFA-logo.jpg",
-        "clothes":"/img/clothes/NFA-ov.svg"
+        "logo":"/img/logos/NPH-logo.jpg",
+        "clothes":"/img/clothes/NPH-ov.svg"
     },
     {
         "nameSW":"LiTHeHack",
@@ -400,7 +400,7 @@ export const groups = [
         "connections":["MT","MTE","MTD","3C","LEG"],
         "color":"#ec6610",
         "color2":"#3B484F",
-        "logo":"/img/logos/MST-logo.png",
+        "logo":"/img/logos/MT-logo.svg",
         "clothes":"/img/clothes/MST-ov.svg"
     },
     {
@@ -452,7 +452,7 @@ export const groups = [
         "connections":["GDK","GEX","LEG","TB"],
         "color":"#01653F",
         "color2":"#000000",
-        "logo":"/img/logos/GST-logo.png",
+        "logo":"/img/logos/GDK-logo.png",
         "clothes":"/img/clothes/GST-ov.svg"
     },
     {

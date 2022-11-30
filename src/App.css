@@ -38,18 +38,7 @@ h3 {
   font-size: 1.1rem;
   margin: 0;
 }
-button {
-  background-color: inherit;
-  font-family: kulturista-web, serif;
-  font-weight: 400;
-  color: white;
-  border: none;
-}
-input {
-  width: 80%;
-  height: 2rem;
-  margin: 1rem 1rem 0 1rem;
-}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -62,24 +51,11 @@ input {
   background-color: var(--blu);
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
-.search {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.dropdown {
-  max-height: 7rem;
-  overflow-y: scroll;
-  width: 80%;
-  position: absolute;
-  margin-top: 3.5rem;
-}
-.dropdown-row {
-  padding: .2rem 0;
-}
+
 .selections {
   width: 80%;
   display: flex;
@@ -90,11 +66,63 @@ input {
   padding-top: 1rem;
   padding-bottom: 5rem;
 }
+
+.random {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.related {
+  width: 18rem;
+}
+.relatedName {
+  width: 80%;
+}
+
+.pageName {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ---button--- */
+button {
+  background-color: inherit;
+  font-family: kulturista-web, serif;
+  font-weight: 400;
+  color: white;
+  border: none;
+}
 .btn-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 7rem;
+}
+.button_color {
+  width: 30px;
+  height: 50px;
+}
+.button_color2 {
+  width: 30px;
+  height: 50px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+.KnappProg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: auto-pro-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  height: 7rem;
+  width: 18rem;
+  background-color: #EEE;
+  box-shadow: var(--blu) .3rem .3rem;
+  border-radius: 15px;
+  padding: 0 1rem;
+  margin: .2rem 0;
 }
 .knapp {
   display: flex;
@@ -113,47 +141,55 @@ input {
 .knapp:hover {
   background-color: var(--liublu);
 }
-.random {
-  width: 80%;
+
+.clothes {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+.clothes > * {
+
+}
+
+/* ---flag--- */
+.flagga {
+  height: 2rem;
+}
+
+/* ---searchbar--- */
+.search {
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.related {
-  width: 18rem;
-}
-.relatedName {
+.dropdown {
+  max-height: 7rem;
+  overflow-y: scroll;
   width: 80%;
+  position: absolute;
+  margin-top: 3.5rem;
 }
-.KnappProg {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: auto-pro-new, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.5rem;
-  height: 7rem;
-  width: 18rem;
-  background-color: #EEE;
-  box-shadow: var(--blu) .3rem .3rem;
-  border-radius: 15px;
-  padding: 0 1rem;
-  margin: .2rem 0;
+.dropdown-row {
+  padding: .2rem 0;
 }
-.flagga {
+input {
+  width: 80%;
   height: 2rem;
+  margin: 1rem 1rem 0 1rem;
 }
-.pageName {
-  margin-top: 2rem;
-  text-align: center;
+::placeholder{
+   font-family: kulturista-web, serif;
 }
-.button_color {
-  width: 30px;
-  height: 50px;
+
+/* ---images--- */
+.campuskollenlogo {
+  width: 6rem;
 }
-.button_color2 {
-  width: 30px;
-  height: 50px;
-  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+.flaggalogo {
+  width: 3rem;
+}
+.backarrow {
+  width: 3rem;
 }
