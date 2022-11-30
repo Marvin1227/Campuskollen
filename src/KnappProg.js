@@ -9,7 +9,7 @@ function KnappProg(props) {
     <Link to={"/info/"+props.link}>
         <div className="KnappProg">
             <div style={{backgroundColor:props.color}} className="button_color"><div style={{backgroundColor:props.color2}} className="button_color2"/></div>
-            <h3>{props.titel}</h3>
+            <h3 className="relatedName">{props.titel}</h3>
         </div>
     </Link>
   );

@@ -21,11 +21,12 @@ function Selection() {
     var filtered = sorted_groups.filter((group) => (group.type === type)); //filtrering efter typ
     //console.log(filtered);
     return (
-        <div className="Home">
+        <div className="home">
             <div className ="header">
-                <h1><TillbakaKnapp/> <Link to={"/"}> Campuskollen</Link></h1>
+                <TillbakaKnapp/> 
+                <h1><Link to={"/"}>Campuskollen</Link></h1>
             </div>
-            {type}
+            {/*type*/}
             {filtered.map((group) => (<div className="dropdown-row"> {<KnappProg titel={eval("group.name"+lang)} link={group.code} color={group.color} color2={group.color2}/>}</div>))}
         </div>
         

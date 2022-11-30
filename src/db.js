@@ -7,7 +7,7 @@ export const groups = [
         "type":"Program",
         "descSW":"MT-studenter läser grundläggande civilingenjörskurser (matematik, programmering, fysik) såväl som specialiserade kurser inom bland annat datorgrafik, informationsvisualisering och webbutveckling. De känns igen på sina orangea ovvar med de gulsvarta civilingenjörsrevärerna på.",
         "descEN":"MT students take standard engineering courses (mathematics, programming, physics), as well as specialized education in i.e. computer graphics, information visualization and media production. MT-students are recognized by their orange overalls with yellow and black stripes along the sides.",
-        "connections":["MST","MTD","MTE","LEG","SKU","3C"],
+        "connections":["MST","MTD","MTE","LEG","3C","SKU"],
         "color":"#ec6610",
         "color2":"#3B484F",
         "logo":"/img/logos/MT-logo.png",

@@ -42,7 +42,6 @@ function Searchbar(props) {
 
     }else if (lang == "EN") {
         barText = "Search here...";
-
     }
 
     return ( 

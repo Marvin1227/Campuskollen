@@ -28,13 +28,15 @@ function Information({onLang}) {
     
     console.log(lang);
     return (
-        <div className="Home">
+        <div className="home">
             <div className ="header">
-                <h1><TillbakaKnapp/> <Link to={"/"}> Campuskollen</Link></h1>
+                <TillbakaKnapp/> 
+                <h1><Link to={"/"}>Campuskollen</Link></h1>
+                <div className="change_lang">{<Flagga onLang={onLang}/>}</div>
             </div>
-            <p><span className="Name">{eval("foundGroup.name"+lang)}</span><br/>
-            {eval("foundGroup.desc"+lang)}<br/></p>
-            Tillhör:<br/>
+            <h2 className="pageName">{eval("foundGroup.name"+lang)}</h2><br/>
+            <p>{eval("foundGroup.desc"+lang)}</p>
+            <h2>Relaterat:</h2><br/>
             {connected.map((group) => (<div className="dropdown-row"> {<KnappProg titel={eval("group.name"+lang)} link={group.code} color={group.color} color2={group.color2}/>}</div>))}
             <div className="change_lang">
                 {<Flagga onLang={onLang}/>}

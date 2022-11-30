@@ -1,5 +1,5 @@
 :root {
-  --blu: #190064;
+  --blu: #17104a;
   --liublu: #00b3e0;
 }
 html {
@@ -21,6 +21,7 @@ p {
   color: var(--blu);
   font-weight: 400;
   font-style: normal;
+  width: 80%;
 }
 h1 {
   color: #FFF;
@@ -34,7 +35,7 @@ h2 {
 h3 {
   color: var(--blu);
   font-family: kulturista-web, serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 button {
@@ -59,6 +60,8 @@ input {
   height: 100px;
   display: flex;
   background-color: var(--blu);
+  align-items: center;
+  justify-content: space-between;
 }
 .search {
   width: 100%;
@@ -67,7 +70,7 @@ input {
   flex-direction: column;
   align-items: center;
 }
-.dropdown{
+.dropdown {
   max-height: 7rem;
   overflow-y: scroll;
   width: 80%;
@@ -112,6 +115,15 @@ input {
 }
 .random {
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.related {
+  width: 18rem;
+}
+.relatedName {
+  width: 80%;
 }
 .KnappProg {
   display: flex;
@@ -122,37 +134,26 @@ input {
   font-style: normal;
   font-size: 1.5rem;
   height: 7rem;
+  width: 18rem;
   background-color: #EEE;
   box-shadow: var(--blu) .3rem .3rem;
   border-radius: 15px;
   padding: 0 1rem;
+  margin: .2rem 0;
 }
-.Flagga {
-  height: 40px;
+.flagga {
+  height: 2rem;
 }
-
-.backArrow{
-  flex-direction: row;
+.pageName {
+  margin-top: 2rem;
+  text-align: center;
 }
-.innerHeader {
-  width: 500px;
-  height: 100%;
-  display: block;
-  background-color: darkkhaki;
-  margin: 0 auto;
- 
-}
-
-.button_color{
+.button_color {
   width: 30px;
   height: 50px;
-  
 }
-.button_color2{
+.button_color2 {
   width: 30px;
   height: 50px;
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
-}
-.Name{
-  font-weight: bold;
 }

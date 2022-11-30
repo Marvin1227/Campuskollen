@@ -18,11 +18,20 @@ function Home({onLang}) {
         console.log(lang);
     const num = Math.floor(Math.random()*groups.length); //slumpad index i databasen
 
+    var program = "Program";
+    var phadderi = "Phadderier";
+    var festeri = "Festerier";
     var forening = "Föreningar";
 
     if(lang == "SW"){
+        program = "Program";
+        phadderi = "Phadderier";
+        festeri = "Festerier"
         forening = "Föreningar";
     }else if (lang == "EN") {
+        program = "Programs";
+        phadderi = "Phadderies";
+        festeri = "Festeries";
         forening = "Associations";
     }
     
@@ -31,59 +40,52 @@ function Home({onLang}) {
         return (
             <div className="home">
                 <div className="header">
-                    
-                <TillbakaKnapp className="backArrow"/> 
-                    <h1>
-                        <Link to={"/"}> Campuskollen</Link>
-                    </h1>
+                    <TillbakaKnapp/> 
+                    <h1><Link to={"/"}>Campuskollen</Link></h1>
+                    <div className="change_lang">{<Flagga onLang={onLang}/>}</div>
                 </div>
                 
-                    <Searchbar/>
-                    <div className="btn-container">
-                        <div className="selections">
-                            <Knapp titel="Program" link="Program"/>
-                            <Knapp titel="Festerier" link="Festeri"/>
-                            <Knapp titel="Phadderier" link="Phadderi"/>
-                            <Knapp titel={forening} link="Förening"/>
-                        </div>
-                        <div className="random">
-                        <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
-                        </div>
+                <Searchbar/>
+                <div className="btn-container">
+                    <div className="selections">
+                        <Knapp titel={program} link="Program"/>
+                        <Knapp titel={festeri} link="Festeri"/>
+                        <Knapp titel={phadderi} link="Phadderi"/>
+                        <Knapp titel={forening} link="Förening"/>
                     </div>
-                    <div className="change_lang"> {<Flagga onLang={onLang}/>} 
+                    <div className="random">
+                        <h3>Slumpad sida</h3>
+                        <KnappProg titel={groups[num].nameSW} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
+                    </div>
                 </div>
             </div>
-            
-            
+             
         );
 
     }else if (lang == "EN") {
         return (
             <div className="home">
                 <div className="header">
-                    
-                <TillbakaKnapp className="backArrow"/> 
-                    <h1>
-                        <Link className="homeButton" to={"/"}> Campuskollen</Link>
-                    </h1>
+                    <TillbakaKnapp/> 
+                    <h1><Link className="homeButton" to={"/"}> Campuskollen</Link></h1>
+                    <div className="change_lang">{<Flagga onLang={onLang}/>}</div>
                 </div>
                 
-                    <Searchbar/>
-                    <div className="btn-container">
-                        <div className="selections">
-                            <Knapp titel="Program" link="Program"/>
-                            <Knapp titel="Festerier" link="Festeri"/>
-                            <Knapp titel="Phadderier" link="Phadderi"/>
-                            <Knapp titel={forening} link="Förening"/>
-                        </div>
-                        <div className="random">
-                        <KnappProg titel={groups[num].nameEN} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
-                        </div>
+                <Searchbar/>
+
+                <div className="btn-container">
+                    <div className="selections">
+                        <Knapp titel={program} link="Program"/>
+                        <Knapp titel={festeri} link="Festeri"/>
+                        <Knapp titel={phadderi} link="Phadderi"/>
+                        <Knapp titel={forening} link="Förening"/>
                     </div>
-                    <div className="change_lang"> {<Flagga onLang={onLang}/>} 
+                    <div className="random">
+                        <h3>Random page</h3>
+                        <KnappProg titel={groups[num].nameEN} link={groups[num].code} color={groups[num].color} color2={groups[num].color2}/>
+                    </div>
                 </div>
             </div>
-            
             
         );
 

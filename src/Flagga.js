@@ -5,14 +5,13 @@ import { useState } from 'react';
 var lang = "SW";
 //Språkknapp som ändrar språk
 function Flagga({ onLang }) {
-  var buttonText = "To English";
+  var buttonText = "To English"; //behöver vi ha text i knappen, borde räcka med bild på flagga
 
   if (lang == "SW") {
     buttonText = "To English";
 
   } else if (lang == "EN") {
     buttonText = "To Swedish";
-
   }
   function changeLanguage() {
     console.log("click");
@@ -27,12 +26,10 @@ function Flagga({ onLang }) {
     onLang(lang);
   }
 
-
   return (
-    <button className="Flagga" onClick={changeLanguage}>{buttonText}</button>
+    <button className="flagga" onClick={changeLanguage}>{buttonText}</button>
   );
 }
 export default Flagga;
-
 
 export var lang;
