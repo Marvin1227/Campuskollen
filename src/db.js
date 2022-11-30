@@ -10,8 +10,8 @@ export const groups = [
         "connections":["MST","MTD","MTE","LEG","3C","SKU"],
         "color":"#ec6610",
         "color2":"#3B484F",
-        "logo":"/img/logos/MT-logo.png",
-        "clothes":"/img/clothes/MT-ov.png"
+        "logo":"/img/logos/MT-logo.svg",
+        "clothes":"/img/clothes/MT-ov.svg"
     },
     {
         "nameSW":"Civilingenjör i Elektronikdesign",
@@ -24,7 +24,7 @@ export const groups = [
         "color":"#159A07",
         "color2":"#000000",
         "logo":"/img/logos/ED-logo.png",
-        "clothes":"/img/clothes/ED-ov.png"
+        "clothes":"/img/clothes/ED-ov.svg"
     },
     {
         "nameSW":"Civilingenjör i Kommunikation, Transport och Samhälle",
@@ -36,8 +36,8 @@ export const groups = [
         "connections":["LST","FAM","3C","EDGB"],
         "color":"#B4292E",
         "color2":"#484386",
-        "logo":"/img/logos/KTS-logo.png",
-        "clothes":"/img/clothes/KTS-ov.png"
+        "logo":"/img/logos/KTS-logo.jpg",
+        "clothes":"/img/clothes/KTS-ov.svg"
     },
     {
         "nameSW":"Grafisk Design och Kommunikation",
@@ -50,7 +50,7 @@ export const groups = [
         "color":"#01653F",
         "color2":"#000000",
         "logo":"/img/logos/GDK-logo.png",
-        "clothes":"/img/clothes/GDK-ov.png"
+        "clothes":"/img/clothes/GDK-ov.svg"
     },
     {
         "nameSW":"Högskoleingenjör i Byggnadsteknik",
@@ -63,7 +63,7 @@ export const groups = [
         "color":"#FFFC2C",
         "color2":"#000000",
         "logo":"/img/logos/BI-logo.png",
-        "clothes":"/img/clothes/BI-ov.png"
+        "clothes":"/img/clothes/BI-ov.svg"
     },
     {
         "nameSW":"Flygtransport och Logistik",
@@ -75,8 +75,8 @@ export const groups = [
         "connections":["LST","SL","ES","FAM","SKU","EDGB"],
         "color":"#729D43",
         "color2":"#48428A",
-        "logo":"/img/logos/FTL-logo.png",
-        "clothes":"/img/clothes/SL-FTL-ov.png"
+        "logo":"/img/logos/FTL-logo.jpg",
+        "clothes":"/img/clothes/SL-FTL-ov.svg"
     },
     {
         "nameSW":"Samhällets Logistik",
@@ -88,8 +88,8 @@ export const groups = [
         "connections":["LST","FTL","ES","FAM","SKU","EDGB"],
         "color":"#F6E12C",
         "color2":"#727179",
-        "logo":"/img/logos/SL-logo.png",
-        "clothes":"/img/clothes/SL-FTL-ov.png"
+        "logo":"/img/logos/SL-logo.jpg",
+        "clothes":"/img/clothes/SL-FTL-ov.svg"
     },
     {
         "nameSW":"Escort",
@@ -101,8 +101,8 @@ export const groups = [
         "connections":["SL","FTL","LST"],
         "color":"#1D0790",
         "color2":"#800507",
-        "logo":"/img/logos/ES-logo.png",
-        "clothes":"/img/clothes/ES-ov.png"
+        "logo":"/img/logos/ES-logo.jpeg",
+        "clothes":"/img/clothes/ES-ov.svg"
     },
     {
         "nameSW":"3Cant",
@@ -115,7 +115,7 @@ export const groups = [
         "color":"#FF0099",
         "color2":"#000000",
         "logo":"/img/logos/3C-logo.png",
-        "clothes":"/img/clothes/3C-ov.png"
+        "clothes":"/img/clothes/3C-ov.svg"
     },
     {
         "nameSW":"Fest-N",
@@ -128,7 +128,7 @@ export const groups = [
         "color":"#CFB53B",
         "color2":"#000000",
         "logo":"/img/logos/FN-logo.png",
-        "clothes":"/img/clothes/FN-ov.png"
+        "clothes":"/img/clothes/FN-ov.svg"
     },
     {
         "nameSW":"Tryckbar",
@@ -141,7 +141,7 @@ export const groups = [
         "color":"#6FB121",
         "color2":"#000000",
         "logo":"/img/logos/TB-logo.png",
-        "clothes":"/img/clothes/TB-ov.png"
+        "clothes":"/img/clothes/TB-ov.svg"
     },
     {
         "nameSW":"Skurkeriet",
@@ -154,7 +154,7 @@ export const groups = [
         "color":"#000000",
         "color2":"#F9EA38",
         "logo":"/img/logos/SKU-logo.png",
-        "clothes":"/img/clothes/SKU-ov.png"
+        "clothes":"/img/clothes/SKU-ov.svg"
     },
     {
         "nameSW":"Legionen",
@@ -167,7 +167,7 @@ export const groups = [
         "color":"#802629",
         "color2":"#454545",
         "logo":"/img/logos/LEG-logo.png",
-        "clothes":"/img/clothes/LEG-ov.png"
+        "clothes":"/img/clothes/LEG-ov.svg"
     },
     {
         "nameSW":"Familjen",
@@ -180,7 +180,7 @@ export const groups = [
         "color":"#455431",
         "color2":"#A79278",
         "logo":"/img/logos/FAM-logo.png",
-        "clothes":"/img/clothes/FAM-ov.png"
+        "clothes":"/img/clothes/FAM-ov.svg"
     },
     {
         "nameSW":"Kretsn",
@@ -193,7 +193,7 @@ export const groups = [
         "color":"#000000",
         "color2":"#573125",
         "logo":"/img/logos/KRN-logo.png",
-        "clothes":"/img/clothes/KRN-ov.png"
+        "clothes":"/img/clothes/KRN-ov.svg"
     },
     {
         "nameSW":"N-Phadderiet",
@@ -205,8 +205,8 @@ export const groups = [
         "connections":["HBI","BST"],
         "color":"#FCF101",
         "color2":"#5e5e5e",
-        "logo":"/img/logos/NFA-logo.png",
-        "clothes":"/img/clothes/NFA-ov.png"
+        "logo":"/img/logos/NFA-logo.jpg",
+        "clothes":"/img/clothes/NFA-ov.svg"
     },
     {
         "nameSW":"LiTHeHack",
@@ -219,7 +219,7 @@ export const groups = [
         "color":"#81A49E",
         "color2":"#643173",
         "logo":"/img/logos/LTH-logo.png",
-        "clothes":"/img/clothes/LTH-ov.png"
+        "clothes":"/img/clothes/LTH-ov.svg"
     },
     {
         "nameSW":"Studentfiket",
@@ -232,7 +232,7 @@ export const groups = [
         "color":"#BA6A33",
         "color2":"#673916",
         "logo":"/img/logos/STF-logo.png",
-        "clothes":"/img/clothes/STF-ov.png"
+        "clothes":"/img/clothes/STF-ov.svg"
     },
     {
         "nameSW":"Trappan",
@@ -245,7 +245,7 @@ export const groups = [
         "color":"#F39200",
         "color2":"#FFFFFF",
         "logo":"/img/logos/TRP-logo.png",
-        "clothes":"/img/clothes/TRP-ov.png"
+        "clothes":"/img/clothes/TRP-ov.svg"
     },
     {
         "nameSW":"NAFFI",
@@ -258,7 +258,7 @@ export const groups = [
         "color":"#FFFFFF",
         "color2":"#EE2F35",
         "logo":"/img/logos/NAF-logo.png",
-        "clothes":"/img/clothes/NAF-ov.png"
+        "clothes":"/img/clothes/NAF-ov.svg"
     },
     {
         "nameSW":"PAFF",
@@ -271,7 +271,7 @@ export const groups = [
         "color":"#ACCEAE",
         "color2":"#231F20",
         "logo":"/img/logos/PAF-logo.png",
-        "clothes":"/img/clothes/PAF-ov.png"
+        "clothes":"/img/clothes/PAF-ov.svg"
     },
     {
         "nameSW":"SKÖN",
@@ -284,7 +284,7 @@ export const groups = [
         "color":"#FFFFFF",
         "color2":"#90c7b7",
         "logo":"/img/logos/SKN-logo.png",
-        "clothes":"/img/clothes/SKN-ov.png"
+        "clothes":"/img/clothes/SKN-ov.svg"
     },
     {
         "nameSW":"LiuNardo",
@@ -297,7 +297,7 @@ export const groups = [
         "color":"#309E48",
         "color2":"#E41C4A",
         "logo":"/img/logos/LIN-logo.png",
-        "clothes":"/img/clothes/LIN-ov.png"
+        "clothes":"/img/clothes/LIN-ov.svg"
     },
     {
         "nameSW":"Candela",
@@ -309,8 +309,8 @@ export const groups = [
         "connections":["MT","KTS","HBI","ED","SL","FTL"],
         "color":"#FFFFFF",
         "color2":"#37005C",
-        "logo":"/img/logos/CAN-logo.png",
-        "clothes":"/img/clothes/CAN-ov.png"
+        "logo":"/img/logos/CAN-logo.jpeg",
+        "clothes":"/img/clothes/CAN-ov.svg"
     },
     {
         "nameSW":"Stubinen",
@@ -322,8 +322,8 @@ export const groups = [
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#6f42c1",
         "color2":"#000000",
-        "logo":"/img/logos/STU-logo.png",
-        "clothes":"/img/clothes/STU-ov.png"
+        "logo":"/img/logos/STU-logo.jpg",
+        "clothes":"/img/clothes/STU-ov.svg"
     },
     {
         "nameSW":"Pub Vattentornet",
@@ -336,7 +336,7 @@ export const groups = [
         "color":"#db8c7b",
         "color2":"#0d3d33",
         "logo":"/img/logos/TRN-logo.png",
-        "clothes":"/img/clothes/TRN-ov.png"
+        "clothes":"/img/clothes/TRN-ov.svg"
     },
     {
         "nameSW":"Förenade Festerier",
@@ -348,8 +348,8 @@ export const groups = [
         "connections":["3C","ES","TB","FN"],
         "color":"#FFFFFF",
         "color2":"#4C7D2A",
-        "logo":"/img/logos/FF-logo.png",
-        "clothes":"/img/clothes/FF-ov.png"
+        "logo":"/img/logos/FF-logo.jpg",
+        "clothes":"/img/clothes/FF-ov.svg"
     },
     {
         "nameSW":"Vargtass",
@@ -362,7 +362,7 @@ export const groups = [
         "color":"#FAEA07",
         "color2":"#000000",
         "logo":"/img/logos/VTS-logo.png",
-        "clothes":"/img/clothes/VTS-ov.png"
+        "clothes":"/img/clothes/VTS-ov.svg"
     },
     {
         "nameSW":"Campus Skramlar",
@@ -375,7 +375,7 @@ export const groups = [
         "color":"#F3C8C2",
         "color2":"#83A49C",
         "logo":"/img/logos/CSR-logo.png",
-        "clothes":"/img/clothes/CSR-ov.png"
+        "clothes":"/img/clothes/CSR-ov.svg"
     },
     {
         "nameSW":"LitheEl",
@@ -388,7 +388,7 @@ export const groups = [
         "color":"#6DB743",
         "color2":"#1A1818",
         "logo":"/img/logos/LEL-logo.png",
-        "clothes":"/img/clothes/LEL-ov.png"
+        "clothes":"/img/clothes/LEL-ov.svg"
     },
     {
         "nameSW":"MT-Sektionen",
@@ -401,7 +401,7 @@ export const groups = [
         "color":"#ec6610",
         "color2":"#3B484F",
         "logo":"/img/logos/MST-logo.png",
-        "clothes":"/img/clothes/MST-ov.png"
+        "clothes":"/img/clothes/MST-ov.svg"
     },
     {
         "nameSW":"Logistik-Sektionen",
@@ -413,8 +413,8 @@ export const groups = [
         "connections":["KTS","SL","FTL", "ES", "3C","FAM","EDGB"],
         "color":"#FFFFFF",
         "color2":"#39408E",
-        "logo":"/img/logos/LST-logo.png",
-        "clothes":"/img/clothes/LST-ov.png"
+        "logo":"/img/logos/LST-logo.jpg",
+        "clothes":"/img/clothes/LST-ov.svg"
     },
     {
         "nameSW":"Bygg-Sektionen",
@@ -427,7 +427,7 @@ export const groups = [
         "color":"#FFFC2C",
         "color2":"#000000",
         "logo":"/img/logos/BST-logo.png",
-        "clothes":"/img/clothes/BST-ov.png"
+        "clothes":"/img/clothes/BST-ov.svg"
     },
     {
         "nameSW":"ED-Styrelsen",
@@ -440,7 +440,7 @@ export const groups = [
         "color":"#159A07",
         "color2":"#000000",
         "logo":"/img/logos/EST-logo.png",
-        "clothes":"/img/clothes/EST-ov.png"
+        "clothes":"/img/clothes/EST-ov.svg"
     },
     {
         "nameSW":"GDK-Styrelsen",
@@ -453,7 +453,7 @@ export const groups = [
         "color":"#01653F",
         "color2":"#000000",
         "logo":"/img/logos/GST-logo.png",
-        "clothes":"/img/clothes/GST-ov.png"
+        "clothes":"/img/clothes/GST-ov.svg"
     },
     {
         "nameSW":"Mette",
@@ -465,8 +465,8 @@ export const groups = [
         "connections":["MT","MST","NOR"],
         "color":"#ec6610",
         "color2":"#000000",
-        "logo":"/img/logos/MTE-logo.png",
-        "clothes":"/img/clothes/MTE-ov.png"
+        "logo":"/img/logos/MTE-logo.svg",
+        "clothes":"/img/clothes/MTE-ov.svg"
     },
     {
         "nameSW":"Medieteknikdagen",
@@ -479,7 +479,7 @@ export const groups = [
         "color":"#ec6610",
         "color2":"#3B484F",
         "logo":"/img/logos/MTD-logo.png",
-        "clothes":"/img/clothes/MTD-ov.png"
+        "clothes":"/img/clothes/MTD-ov.svg"
     },
     {
         "nameSW":"EDGB-LOGIN",
@@ -492,7 +492,7 @@ export const groups = [
         "color":"#5DBC56",
         "color2":"#444FA2",
         "logo":"/img/logos/EDGB-logo.png",
-        "clothes":"/img/clothes/EDGB-ov.png"
+        "clothes":"/img/clothes/EDGB-ov.svg"
     },
     {
         "nameSW":"Nora",
@@ -505,7 +505,7 @@ export const groups = [
         "color":"#F198C1",
         "color2":"#878786",
         "logo":"/img/logos/NOR-logo.png",
-        "clothes":"/img/clothes/NOR-ov.png"
+        "clothes":"/img/clothes/NOR-ov.svg"
     },
     {
         "nameSW":"BAM",
@@ -518,7 +518,7 @@ export const groups = [
         "color":"#F3D300",
         "color2":"#626365",
         "logo":"/img/logos/BAM-logo.png",
-        "clothes":"/img/clothes/BAM-ov.png"
+        "clothes":"/img/clothes/BAM-ov.svg"
     },
     {
         "nameSW":"GDK EX",
@@ -531,7 +531,7 @@ export const groups = [
         "color":"#FAC04A",
         "color2":"#A192C6",
         "logo":"/img/logos/GEX-logo.png",
-        "clothes":"/img/clothes/GEX-ov.png"
+        "clothes":"/img/clothes/GEX-ov.svg"
     },
     {
         "nameSW":"LiTHanian",
@@ -544,6 +544,6 @@ export const groups = [
         "color":"#E04E81",
         "color2":"#4B398E",
         "logo":"/img/logos/LAN-logo.png",
-        "clothes":"/img/clothes/LAN-ov.png"
+        "clothes":"/img/clothes/LAN-ov.svg"
     }
 ]
