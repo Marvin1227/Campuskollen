@@ -6,13 +6,10 @@ import Searchbar from './searchbar';
 import Flagga from './Flagga';
 import TillbakaKnapp from './TillbakaKnapp';
 import { Link } from "react-router-dom";
-import { lang } from './Flagga';
 import { useContext } from "react";
 import { LangContext } from "./App"
 
-
 //Startsidan
-
 function Home({ onLang }) {
 
 	const lang = useContext(LangContext);

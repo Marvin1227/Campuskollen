@@ -1,5 +1,4 @@
 import './App.css';
-import { groups } from './db';
 import { Link } from "react-router-dom";
 
 //knapp på startsidan

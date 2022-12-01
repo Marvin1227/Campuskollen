@@ -1,13 +1,10 @@
 import './App.css';
 import { groups } from './db';
-import Knapp from './Knapp';
 import KnappProg from './KnappProg';
-import Searchbar from './searchbar';
 import TillbakaKnapp from './TillbakaKnapp';
 import { Link, useParams } from "react-router-dom";
 import Flagga from './Flagga';
 import { lang } from './Flagga';
-import { LangContext } from "./App"
 
 //Sidan med alla föreningar av en typ, landar här från de fyra stora knapparna på startsidan
 //Program, Föreningar, Festerier, Phadderier

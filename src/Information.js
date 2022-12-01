@@ -1,13 +1,9 @@
 import './App.css';
 import { groups } from './db';
-import Knapp from './Knapp';
 import KnappProg from './KnappProg';
-import Searchbar from './searchbar';
 import TillbakaKnapp from './TillbakaKnapp';
 import { Link, useParams } from "react-router-dom";
-import App from './App';
 import Flagga from './Flagga';
-import { lang } from './Flagga';
 import { useContext } from "react";
 import { LangContext } from "./App"
 
