@@ -7,8 +7,7 @@ import { matchSorter } from 'match-sorter';
 
 function Searchbar(props) {
 
-    const sorted_groups = groups.sort((a, b) => eval("a.name" + lang).localeCompare(eval("b.name" + lang))); //databasen sorterad alfabetiskt
-    //console.log(sorted_groups);
+    const sorted_groups = groups; //hämtar en lista av hela databasen
 
     const [searchWord, setText] = useState("");
 
@@ -29,7 +28,6 @@ function Searchbar(props) {
         }
         else return false; //returnera inget
     }
-
 
     var filtered = sorted_groups.filter(getName); //filtrering
 

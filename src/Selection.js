@@ -14,13 +14,11 @@ import { LangContext } from "./App"
 function Selection({ onLang }) {
 
     let { type } = useParams(); //hämtning av typ från url
-
-    //console.log(type);
+    
     const sorted_groups = groups.sort((a, b) => eval("a.name" + lang).localeCompare(eval("b.name" + lang))); //hela databasen sorterad alfabetiskt
 
-    //console.log(group.type);
     var filtered = sorted_groups.filter((group) => (group.type === type)); //filtrering efter typ
-    //console.log(filtered);
+
     return (
         <div className="home">
             <div className="header">

@@ -6,22 +6,10 @@ import {lang} from './Flagga';
 
 //tillbakaknapp
 function TillbakaKnapp(props) {
-        
-    var buttonText = "< Tillbaka";
-
-    if(lang == "SW"){
-        buttonText = "< Tillbaka";
-
-    }else if (lang == "EN") {
-        buttonText = "< Back";
-
-    }
 
     let Navigate = useNavigate();
     return (
-        
-            <button onClick={() => Navigate(-1)}><img className="backarrow" src="/img/backarrow.png"/></button>
-        
+        <button onClick={() => Navigate(-1)}><img className="backarrow" src="/img/backarrow.png"/></button>
     );
 }
 export default TillbakaKnapp;

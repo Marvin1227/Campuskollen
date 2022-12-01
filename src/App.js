@@ -9,7 +9,7 @@ import{createContext, useState} from "react"
 export const LangContext = createContext("SW");
 function App() {
   const [lang, setLang] = useState("SW")
-  //let lang = "SW";
+
   return (
     <LangContext.Provider value={lang}>
      <div>
