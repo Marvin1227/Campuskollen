@@ -23,7 +23,7 @@ function Selection({ onLang }) {
                 <h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
                 <div className="change_lang">{<Flagga onLang={onLang} />}</div>
             </div>
-            {/*type*/}
+            <h2>Välj {type}</h2>
             {filtered.map((group) => (<div className="dropdown-row"> {<KnappProg titel={eval("group.name" + lang)} link={group.code} color={group.color} color2={group.color2} />}</div>))}
         </div>
 

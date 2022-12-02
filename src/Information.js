@@ -24,11 +24,11 @@ function Information({ onLang }) {
     let clothe_desc = "";
     let relate_title = "";
     if(lang==="SW"){
-        clothe_desc = "Känns igen som:";
+        //clothe_desc = "Känns igen som:";
         relate_title = "Relaterat:";
     }
     else{
-        clothe_desc = "Recognized as:";
+        //clothe_desc = "Recognized as:";
         relate_title = "Related:";
     }
 
@@ -41,12 +41,15 @@ function Information({ onLang }) {
                 <div className="change_lang">{<Flagga onLang={onLang} />}</div>
             </div>
             <h2 className="pageName">{eval("foundGroup.name" + lang)}</h2><br />
-            <img className="campuskollenlogo" src={foundGroup.logo} alt="" /><br />
+            <div className="pics">
+                <img className="groupLogo" src={foundGroup.logo} alt="" /><br />
+                <div className="clothes">
+                    <p>{clothe_desc}</p><img className="groupClothes" src={foundGroup.clothes} alt="" />
+                </div><br />
+            </div>
             <p>{eval("foundGroup.desc" + lang)}</p>
-            <div className="clothes">
-                <p>{clothe_desc}</p><img className="campuskollenlogo" src={foundGroup.clothes} alt="" />
-            </div><br />
-            <h2>{relate_title}</h2><br/>
+            
+            <h2>{relate_title}</h2>
             {connected.map((group) => (<div className="dropdown-row"> {<KnappProg titel={eval("group.name" + lang)} link={group.code} color={group.color} color2={group.color2} />}</div>))}
         </div>
 

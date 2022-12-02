@@ -15,6 +15,8 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  align-items: center;
 }
 p {
   font-family: kulturista-web, serif;
@@ -50,7 +52,7 @@ h3 {
   display: flex;
   background-color: var(--blu);
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -120,9 +122,14 @@ button {
   width: 18rem;
   background-color: #EEE;
   box-shadow: var(--blu) .3rem .3rem;
+  transition: .1s;
   border-radius: 15px;
   padding: 0 1rem;
   margin: .2rem 0;
+}
+.KnappProg:hover {
+  box-shadow: var(--liublu) .3rem .3rem;
+  transition: .1s;
 }
 .knapp {
   display: flex;
@@ -131,6 +138,7 @@ button {
   width: 7rem;
   background-color: #EEE;
   box-shadow: var(--blu) .3rem .3rem;
+  transition: .1s;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -139,16 +147,26 @@ button {
   transition: background-color 0.5s ease-out 100ms;
 }
 .knapp:hover {
-  background-color: var(--liublu);
+  box-shadow: var(--liublu) .3rem .3rem;
+  transition: .1s;
 }
-
+.pics {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+}
+.groupLogo {
+  width: 10rem;
+  margin: 0 1rem;
+}
+.groupClothes {
+  width: 5rem;
+  margin: 0 1rem;
+}
 .clothes {
   display: flex;
-  flex-direction: row;
   width: 70%;
-}
-.clothes > * {
-
 }
 
 /* ---flag--- */
