@@ -37,10 +37,10 @@ function Searchbar(props) {
     var barText = "Sök här...";
 
     if (lang == "SW") {
-        barText = "Sök här...";
+        barText = "Sök efter program, föreningar osv...";
 
     } else if (lang == "EN") {
-        barText = "Search here...";
+        barText = "Search for programs, associations and more...";
     }
 
     return (

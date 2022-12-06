@@ -23,7 +23,6 @@ p {
   color: var(--blu);
   font-weight: 400;
   font-style: normal;
-  width: 80%;
 }
 h1 {
   color: #FFF;
@@ -33,6 +32,7 @@ h2 {
   color: var(--blu);
   font-family: auto-pro-new, sans-serif;
   font-size: 1.5rem;
+  margin: 2rem 0 0 0;
 }
 h3 {
   color: var(--blu);
@@ -40,11 +40,11 @@ h3 {
   font-size: 1.1rem;
   margin: 0;
 }
-
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3rem;
 }
 .header {
   width: 100%;
@@ -57,7 +57,6 @@ h3 {
   z-index: 1;
   top: 0;
 }
-
 .selections {
   width: 80%;
   display: flex;
@@ -68,7 +67,6 @@ h3 {
   padding-top: 1rem;
   padding-bottom: 5rem;
 }
-
 .random {
   width: 80%;
   display: flex;
@@ -81,7 +79,14 @@ h3 {
 .relatedName {
   width: 80%;
 }
-
+.info {
+  width: 80%;
+  padding: 3rem 1rem;
+  background-color: #EEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .pageName {
   margin-top: 2rem;
   text-align: center;
@@ -150,11 +155,14 @@ button {
   box-shadow: var(--liublu) .3rem .3rem;
   transition: .1s;
 }
+.knapp h2 {
+  margin: 0;
+}
 .pics {
   display: flex;
   align-items: center;
   width: 80%;
-  justify-content: center;
+  padding-bottom: 1rem;
 }
 .groupLogo {
   width: 10rem;
@@ -163,15 +171,6 @@ button {
 .groupClothes {
   width: 5rem;
   margin: 0 1rem;
-}
-.clothes {
-  display: flex;
-  width: 70%;
-}
-
-/* ---flag--- */
-.flagga {
-  height: 2rem;
 }
 
 /* ---searchbar--- */
@@ -207,6 +206,7 @@ input {
 }
 .flaggalogo {
   width: 3rem;
+  border: solid;
 }
 .backarrow {
   width: 3rem;
