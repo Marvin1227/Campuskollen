@@ -23,18 +23,25 @@ function Home({ onLang }) {
 	var phadderi = "";
 	var festeri = "";
 	var forening = "";
+	var infotext = "";
 
 	if (lang == "SW") {
 		program = "Program";
 		phadderi = "Phadderier";
 		festeri = "Festerier"
 		forening = "Föreningar";
+		infotext = "Campuskollen samlar tekniska fakultetens alla program, föreningar, phadderier och festerier " +
+					"vid Campus Norrköping för dig att upptäcka och läsa på om. Använd sökfältet eller tryck dig " +
+					"själv vidare för att hitta det du söker efter.";
 	} 
     else {
 		program = "Programs";
 		phadderi = "Phadderies";
 		festeri = "Festeries";
 		forening = "Associations";
+		infotext = "Campuskollen collects all of the programs, associations, phadderies and festeries " + 
+					"under the technical faculty at Campus Norrköping for you to discover. Use the " + 
+					"search bar or tap your way around to find what you are looking for.";
 	}
 
 	//popup
@@ -43,9 +50,10 @@ function Home({ onLang }) {
 	const popupStyle = {
 		backgroundColor: '#FFF',
 		color: 'var(--blu)',
-		padding: '3rem',
+		padding: '2rem',
 		cursor: 'pointer',
-		boxShadow: "var(--blu) 0 0 20rem 3rem"
+		boxShadow: "rgb(23 16 74 / 40%) 0 0 0 100rem",
+		textAlign: "center"
 	}
 	
 	var random = "groups[num].nameSW";
@@ -59,7 +67,9 @@ function Home({ onLang }) {
 				</div>
 				<Popup style={popupStyle} visible={visible} onClose={() => setVisible(false)}>
 					<div onClick={() => setVisible(false)}>
-						<p>I am a popup!</p>
+						<img src="/img/logga6.png" className="infologo"/> 
+						<p>{infotext}</p>
+						<p class="small">Tryck var som helst för att stänga detta fönster</p>
 					</div>
 				</Popup>
 				<Searchbar />
@@ -83,11 +93,17 @@ function Home({ onLang }) {
 		return (
 			<div className="home">
 				<div className="header">
-					<div className="backarrow" />
+					<div  onClick={() => setVisible(!visible)}><img src="/img/i.svg" className="backarrow"/></div>
 					<h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
 					<Flagga onLang={onLang} />
 				</div>
-
+				<Popup style={popupStyle} visible={visible} onClose={() => setVisible(false)}>
+					<div onClick={() => setVisible(false)}>
+						<img src="/img/logga6.png" className="infologo"/> 
+						<p>{infotext}</p>
+						<p className="small">Tap anywhere to close this window</p>
+					</div>
+				</Popup>
 				<Searchbar/>
 				
 				<div className="btn-container">
@@ -103,9 +119,7 @@ function Home({ onLang }) {
 					</div>
 				</div>
 			</div>
-
 		);
-
 	}
 }
 

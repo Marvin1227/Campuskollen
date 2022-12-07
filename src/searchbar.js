@@ -40,7 +40,7 @@ function Searchbar(props) {
         barText = "Sök efter program, föreningar osv...";
 
     } else if (lang == "EN") {
-        barText = "Search for programs, associations and more...";
+        barText = "Search for programs, associations, etc...";
     }
 
     return (

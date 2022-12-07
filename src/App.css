@@ -8,6 +8,7 @@ html {
   font-family: kulturista-web, serif;
   font-size: 15px;
 
+  /* no-select text */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -31,10 +32,14 @@ p {
   color: var(--blu);
   font-weight: 400;
   font-style: normal;
+  line-height: 1.4rem;
 }
 h1 {
-  color: #FFF;
+  color: var(--blu);
   font-family: auto-pro-new, sans-serif;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  line-height: 2rem;
 }
 h2 {
   color: var(--blu);
@@ -47,6 +52,7 @@ h3 {
   font-family: kulturista-web, serif;
   font-size: 1.1rem;
   margin: 0;
+  padding: .5rem 0;
 }
 .home {
   display: flex;
@@ -65,6 +71,13 @@ h3 {
   z-index: 1;
   top: 0;
 }
+.small {
+  font-size: .7rem;
+  color: #888;
+}
+.infologo {
+  width: 10rem;
+}
 .selections {
   width: 80%;
   display: flex;
@@ -81,6 +94,12 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+.random a {
+  margin-top: .5rem;
+}
+.random .KnappProg {
+  width: 16.5rem;
+}
 .related {
   width: 18rem;
 }
@@ -89,15 +108,16 @@ h3 {
 }
 .info {
   width: 80%;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
   background-color: #EEE;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
+  margin-top: 2rem;
+  border: var(--blu) solid .2rem;
 }
 .pageName {
-  margin-top: 2rem;
   text-align: center;
 }
 
@@ -108,6 +128,8 @@ button {
   font-weight: 400;
   color: white;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 .btn-container {
   display: flex;
@@ -132,10 +154,10 @@ button {
   font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
-  height: 7rem;
+  min-height: 5.5rem;
   width: 18rem;
   background-color: #EEE;
-  box-shadow: var(--blu) .3rem .3rem;
+  box-shadow: #999 .3rem .3rem;
   transition: .1s;
   border-radius: 15px;
   padding: 0 1rem;
@@ -172,6 +194,7 @@ button {
 .groupClothes {
   width: 5rem;
   margin: 0 1rem;
+  border-radius: 1rem;
 }
 .group-selection {
   margin-bottom: .5rem;
@@ -209,6 +232,8 @@ input {
   width: 80%;
   height: 3rem;
   margin: 1rem 1rem 0 1rem;
+  border: var(--blu) solid .1rem;
+  font-size: 1rem;
 }
 ::placeholder{
    font-family: kulturista-web, serif;
@@ -222,8 +247,11 @@ input {
   width: 3rem;
   height: 2rem;
   border: #FFF solid .1rem;
+  border-radius: .25rem;
 }
 .backarrow {
   width: 3rem;
+  height: 2rem;
   border: #FFF solid .1rem;
+  border-radius: .25rem;
 }

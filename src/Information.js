@@ -40,8 +40,9 @@ function Information({ onLang }) {
                 <h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
                 <Flagga onLang={onLang} />
             </div>
-            <h2 className="pageName">{eval("foundGroup.name" + lang)}</h2>
+            
             <div className="info">
+                <h1 className="pageName">{eval("foundGroup.name" + lang)}</h1>
                 <img className="groupLogo" src={foundGroup.logo} alt="" />
                 <p>{eval("foundGroup.desc" + lang)}</p>
                 <img className="groupClothes" src={foundGroup.clothes} alt="" />
