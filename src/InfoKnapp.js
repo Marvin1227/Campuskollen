@@ -1,20 +1,17 @@
 import './App.css';
 import { useState } from 'react';
+import Popup from 'react-animated-popup'
 
 //infobakaknapp
-const InfoKnapp = (props) => {
+function InfoKnapp() {
 
-const [isOpen, setOpen] = useState();
+    const [visible, setVisible] = useState(false)
 
-function togglePopup() {
-    setOpen(!isOpen);
-}
-
-props.func(isOpen);
-
-return(
-    <button onClick={togglePopup}><img className="backarrow" src="/img/i.svg"/></button>
-);
+    return (
+      <Popup visible={visible} onClose={() => setVisible(false)}>
+        <p>I am a popup!</p>
+      </Popup>
+    );
 }
 
 export default InfoKnapp;

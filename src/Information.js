@@ -31,7 +31,7 @@ function Information({ onLang }) {
         //clothe_desc = "Recognized as:";
         relate_title = "Related:";
     }
-
+    //type={foundGroup.type}
     console.log(lang);
     return (
         <div className="home">

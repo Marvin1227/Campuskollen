@@ -7,6 +7,13 @@ html {
   height: 100%;
   font-family: kulturista-web, serif;
   font-size: 15px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 body {
   background-color: #FFF;
@@ -46,7 +53,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding-bottom: 3rem;
-  height: 100vh;
 }
 .header {
   width: 100%;
@@ -215,9 +221,9 @@ input {
 .flaggalogo {
   width: 3rem;
   height: 2rem;
-  border: solid;
+  border: #FFF solid .1rem;
 }
 .backarrow {
   width: 3rem;
-  border: solid;
+  border: #FFF solid .1rem;
 }

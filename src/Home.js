@@ -8,7 +8,9 @@ import TillbakaKnapp from './TillbakaKnapp';
 import InfoKnapp from './InfoKnapp';
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { LangContext } from "./App"
+import { LangContext } from "./App";
+import Popup from 'react-animated-popup';
+import { useState } from 'react';
 
 //Startsidan
 function Home({ onLang }) {
@@ -36,17 +38,30 @@ function Home({ onLang }) {
 	}
 
 	//popup
+	const [visible, setVisible] = useState(false);
+	
+	const popupStyle = {
+		backgroundColor: '#FFF',
+		color: 'var(--blu)',
+		padding: '3rem',
+		cursor: 'pointer',
+		boxShadow: "var(--blu) 0 0 20rem 3rem"
+	}
 	
 	var random = "groups[num].nameSW";
 	if (lang == "SW") {
 		return (
 			<div className="home">
 				<div className="header">
-					<InfoKnapp className="backarrow" func={changeVis}/>
+					<div  onClick={() => setVisible(!visible)}><img src="/img/i.svg" className="backarrow"/></div>
 					<h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
 					<Flagga onLang={onLang} />
 				</div>
-
+				<Popup style={popupStyle} visible={visible} onClose={() => setVisible(false)}>
+					<div onClick={() => setVisible(false)}>
+						<p>I am a popup!</p>
+					</div>
+				</Popup>
 				<Searchbar />
 				<div className="btn-container">
 					<div className="selections">
