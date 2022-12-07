@@ -16,15 +16,27 @@ function Selection({ onLang }) {
 
     var filtered = sorted_groups.filter((group) => (group.type === type)); //filtrering efter typ
 
+    let title = "";
+    let eng_type = "";
+
+    if(lang==="SW"){
+        title = "Välj " + type + " (A-Ö)";
+    }
+    else{
+        if(type==="Förening") {eng_type="Association";}
+		else {eng_type=type;}
+        title = "Select " + eng_type + " (A-Z)";
+    }
+
     return (
         <div className="home">
             <div className="header">
                 <TillbakaKnapp />
                 <h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
-                <div className="change_lang">{<Flagga onLang={onLang} />}</div>
+                <Flagga onLang={onLang} />
             </div>
-            <h2>Välj {type} (A-Ö)</h2>
-            {filtered.map((group) => (<div className="dropdown-row"> {<KnappProg titel={eval("group.name" + lang)} link={group.code} color={group.color} color2={group.color2} />}</div>))}
+            <h2>{title}</h2>
+            {filtered.map((group) => (<div className="group-selection"> {<KnappProg titel={eval("group.name" + lang)} link={group.code} color={group.color} color2={group.color2} />}</div>))}
         </div>
 
     );

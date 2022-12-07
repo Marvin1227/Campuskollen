@@ -177,8 +177,8 @@ export const groups = [
         "descSW":"Familjen är phadderiet som tillhör logistikprogrammen. De bär svarta lockiga peruker och svarta solglasögon. Familjen arrangerar mottagningen under nolle-p för nya logistikstudenter, och även Mexico-sittningen senare på hösten.",
         "descEN":"Familjen is the phadderi that belongs to the logistics programs. They wear black curly wigs and dark tinted glasses. Familjen arranges the reception for new logistics students and the Mexico Sitting later in the autumn.",
         "connections":["LST","KTS","SL","FTL"],
-        "color":"#455431",
-        "color2":"#A79278",
+        "color":"#FFFFFF",
+        "color2":"#39408E",
         "logo":"/img/logos/FAM-logo.png",
         "clothes":"/img/clothes/FAM-ov.svg"
     },
@@ -230,7 +230,7 @@ export const groups = [
         "descEN":"Studentfiket is located on floor 5 in Täppan. They sell coffee, snacks and other things for low prices. Here, students can sign up to work short shifts in exchange for benefits, such as coffee cards.",
         "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
         "color":"#BA6A33",
-        "color2":"#673916",
+        "color2":"#a1140d",
         "logo":"/img/logos/STF-logo.png",
         "clothes":"/img/clothes/STF-ov.svg"
     },

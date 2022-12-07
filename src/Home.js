@@ -5,6 +5,7 @@ import KnappProg from './KnappProg';
 import Searchbar from './searchbar';
 import Flagga from './Flagga';
 import TillbakaKnapp from './TillbakaKnapp';
+import InfoKnapp from './InfoKnapp';
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LangContext } from "./App"
@@ -34,14 +35,16 @@ function Home({ onLang }) {
 		forening = "Associations";
 	}
 
+	//popup
+	
 	var random = "groups[num].nameSW";
 	if (lang == "SW") {
 		return (
 			<div className="home">
 				<div className="header">
-					<TillbakaKnapp />
+					<InfoKnapp className="backarrow" func={changeVis}/>
 					<h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
-					<div className="change_lang">{<Flagga onLang={onLang} />}</div>
+					<Flagga onLang={onLang} />
 				</div>
 
 				<Searchbar />
@@ -65,13 +68,13 @@ function Home({ onLang }) {
 		return (
 			<div className="home">
 				<div className="header">
-                <TillbakaKnapp />
+					<div className="backarrow" />
 					<h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
-					<div className="change_lang">{<Flagga onLang={onLang} />}</div>
+					<Flagga onLang={onLang} />
 				</div>
 
-				<Searchbar />
-
+				<Searchbar/>
+				
 				<div className="btn-container">
 					<div className="selections">
 						<Knapp titel={program} link="Program" />

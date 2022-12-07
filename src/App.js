@@ -12,7 +12,6 @@ function App() {
 
   return (
     <LangContext.Provider value={lang}>
-     <div>
        <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/tjg5yvi.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,8 +23,6 @@ function App() {
             <Route path="/info/:code" element={<Information onLang={setLang}/>}/>
           </Routes>
         </BrowserRouter>
-      
-      </div>
     </LangContext.Provider>
   );
 }

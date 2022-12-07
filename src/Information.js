@@ -38,7 +38,7 @@ function Information({ onLang }) {
             <div className="header">
                 <TillbakaKnapp />
                 <h1><Link to={"/"}><img className="campuskollenlogo" src={"/img/logga6-small.png"} /></Link></h1>
-                <div className="change_lang">{<Flagga onLang={onLang} />}</div>
+                <Flagga onLang={onLang} />
             </div>
             <h2 className="pageName">{eval("foundGroup.name" + lang)}</h2>
             <div className="info">
@@ -48,9 +48,8 @@ function Information({ onLang }) {
             </div>
             
             <h2>{relate_title}</h2>
-            {connected.map((group) => (<div className="dropdown-row"> {<KnappProg titel={eval("group.name" + lang)} link={group.code} color={group.color} color2={group.color2} />}</div>))}
+            {connected.map((group) => (<div className="group-selection"> {<KnappProg titel={eval("group.name" + lang)} link={group.code} color={group.color} color2={group.color2} />}</div>))}
         </div>
-
     );
 }
 
