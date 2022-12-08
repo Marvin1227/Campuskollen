@@ -545,5 +545,18 @@ export const groups = [
         "color2":"#4B398E",
         "logo":"/img/logos/LAN-logo.png",
         "clothes":"/img/clothes/LAN-ov.svg"
+    },
+    {
+        "nameSW":"Föset",
+        "nameEN":"Föset",
+        "code":"FOS",
+        "type":"Förening",
+        "descSW":"Campus Norrköpings nyetablerade öppna festeri.",
+        "descEN":"Campus Norrköping's newly established open festeri.",
+        "connections":["GDK","MT","KTS","HBI","ED","SL","FTL"],
+        "color":"#33F",
+        "color2":"#000",
+        "logo":"/img/logos/FOS-logo.png",
+        "clothes":"/img/clothes/FOS-ov.svg"
     }
 ]
