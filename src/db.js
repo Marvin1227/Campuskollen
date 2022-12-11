@@ -347,7 +347,7 @@ export const groups = [
         "descEN":"FF ('United Festeries') consists of previous Festerists, acting as a communicating middle man between Festeries and Trappan.",
         "connections":["3C","ES","TB","FN"],
         "color":"#FFFFFF",
-        "color2":"#4C7D2A",
+        "color2":"#000",
         "logo":"/img/logos/FF-logo.jpg",
         "clothes":"/img/clothes/FF-ov.svg"
     },
